@@ -116,7 +116,7 @@ export const Stats = () => {
             </div>
           </div>
           
-          {/* Enhanced Trusted By Logos */}
+          {/* Updated Trusted By Logos with the new client logos */}
           <div className="mt-16">
             <div className="text-center mb-12">
               <h3 className="text-2xl font-bold text-slate-800 mb-4">Trusted By Industry Leaders</h3>
@@ -128,7 +128,7 @@ export const Stats = () => {
             <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-8 max-w-6xl mx-auto">
               <div className="bg-white/90 rounded-lg p-5 flex items-center justify-center shadow-sm border border-slate-200/40 transition-all hover:shadow-md h-24">
                 <img 
-                  src="/lovable-uploads/2bcb9071-2d6e-4239-bfc6-efc6d8160d59.png" 
+                  src="/lovable-uploads/df1d2fe6-2354-4a77-9691-141308b2a3bf.png" 
                   alt="Compensa Vienna Insurance Group" 
                   className="max-h-full max-w-full object-contain"
                 />
@@ -136,7 +136,7 @@ export const Stats = () => {
               
               <div className="bg-white/90 rounded-lg p-5 flex items-center justify-center shadow-sm border border-slate-200/40 transition-all hover:shadow-md h-24">
                 <img 
-                  src="/lovable-uploads/ea68fa46-eb95-40df-8dea-1529e818bf03.png" 
+                  src="/lovable-uploads/c34106a3-3db2-4a1d-b19d-c8586ee5e01e.png" 
                   alt="4F" 
                   className="max-h-full max-w-full object-contain"
                 />
@@ -144,15 +144,15 @@ export const Stats = () => {
               
               <div className="bg-white/90 rounded-lg p-5 flex items-center justify-center shadow-sm border border-slate-200/40 transition-all hover:shadow-md h-24">
                 <img 
-                  src="/lovable-uploads/99ff3f42-89f3-4c45-b976-cf9cff5d6dc3.png" 
-                  alt="Bank Polski" 
+                  src="/lovable-uploads/1119faa9-9a21-4e1a-9e78-908aa68794e8.png" 
+                  alt="NOMAX" 
                   className="max-h-full max-w-full object-contain"
                 />
               </div>
               
               <div className="bg-white/90 rounded-lg p-5 flex items-center justify-center shadow-sm border border-slate-200/40 transition-all hover:shadow-md h-24">
                 <img 
-                  src="/lovable-uploads/d33c8b89-5883-40c7-af9a-c7eae6d62703.png" 
+                  src="/lovable-uploads/edd5f21d-8446-4d89-bd05-7f55db4551f9.png" 
                   alt="BNP Paribas" 
                   className="max-h-full max-w-full object-contain"
                 />
@@ -160,8 +160,8 @@ export const Stats = () => {
               
               <div className="bg-white/90 rounded-lg p-5 flex items-center justify-center shadow-sm border border-slate-200/40 transition-all hover:shadow-md h-24">
                 <img 
-                  src="/lovable-uploads/fe277b04-5c32-4263-865c-1f0111aa42d0.png" 
-                  alt="Loco Trans-Sped" 
+                  src="/lovable-uploads/1eeb7ba6-9c25-4ef9-85b6-9980de96ef19.png" 
+                  alt="Zymetria" 
                   className="max-h-full max-w-full object-contain"
                 />
               </div>
@@ -170,40 +170,40 @@ export const Stats = () => {
             <div className="mt-8 grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-8 max-w-6xl mx-auto">
               <div className="bg-white/90 rounded-lg p-5 flex items-center justify-center shadow-sm border border-slate-200/40 transition-all hover:shadow-md h-24">
                 <img 
-                  src="/lovable-uploads/ea68fa46-eb95-40df-8dea-1529e818bf03.png" 
-                  alt="Dr Irena Eris" 
-                  className="max-h-full max-w-full object-contain opacity-90"
+                  src="/lovable-uploads/3625ef66-8d0e-4641-85ef-b35edf090bdc.png" 
+                  alt="Wosana" 
+                  className="max-h-full max-w-full object-contain"
                 />
               </div>
               
               <div className="bg-white/90 rounded-lg p-5 flex items-center justify-center shadow-sm border border-slate-200/40 transition-all hover:shadow-md h-24">
                 <img 
-                  src="/lovable-uploads/2bcb9071-2d6e-4239-bfc6-efc6d8160d59.png" 
+                  src="/lovable-uploads/28b29141-d974-49b8-a5e4-178acd9be74a.png" 
                   alt="RBB" 
-                  className="max-h-full max-w-full object-contain opacity-90"
+                  className="max-h-full max-w-full object-contain"
                 />
               </div>
               
               <div className="bg-white/90 rounded-lg p-5 flex items-center justify-center shadow-sm border border-slate-200/40 transition-all hover:shadow-md h-24">
                 <img 
-                  src="/lovable-uploads/99ff3f42-89f3-4c45-b976-cf9cff5d6dc3.png" 
-                  alt="NOMAX" 
-                  className="max-h-full max-w-full object-contain opacity-90"
-                />
-              </div>
-              
-              <div className="bg-white/90 rounded-lg p-5 flex items-center justify-center shadow-sm border border-slate-200/40 transition-all hover:shadow-md h-24">
-                <img 
-                  src="/lovable-uploads/d33c8b89-5883-40c7-af9a-c7eae6d62703.png" 
+                  src="/lovable-uploads/6aefa318-3c3f-4f9a-8163-f362056a0519.png" 
                   alt="Real Management" 
-                  className="max-h-full max-w-full object-contain opacity-90"
+                  className="max-h-full max-w-full object-contain"
                 />
               </div>
               
               <div className="bg-white/90 rounded-lg p-5 flex items-center justify-center shadow-sm border border-slate-200/40 transition-all hover:shadow-md h-24">
                 <img 
-                  src="/lovable-uploads/fe277b04-5c32-4263-865c-1f0111aa42d0.png" 
-                  alt="Zymetria" 
+                  src="/lovable-uploads/1a936708-6465-48a7-a963-c42a56b6e983.png" 
+                  alt="Loco Trans-Sped" 
+                  className="max-h-full max-w-full object-contain"
+                />
+              </div>
+              
+              <div className="bg-white/90 rounded-lg p-5 flex items-center justify-center shadow-sm border border-slate-200/40 transition-all hover:shadow-md h-24">
+                <img 
+                  src="/lovable-uploads/c34106a3-3db2-4a1d-b19d-c8586ee5e01e.png" 
+                  alt="4F" 
                   className="max-h-full max-w-full object-contain opacity-90"
                 />
               </div>
