@@ -75,6 +75,12 @@ export default {
 					800: '#074b7f',
 					900: '#0a406a',
 					950: '#062a48',
+				},
+				quantifier: {
+					purple: '#7030a0',
+					blue: '#1e8fff',
+					darkblue: '#0a1e3c',
+					darkpurple: '#2d0a4d'
 				}
 			},
 			borderRadius: {

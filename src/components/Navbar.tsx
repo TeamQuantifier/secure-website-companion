@@ -25,35 +25,33 @@ export const Navbar = () => {
       }`}
     >
       <div className="max-w-7xl mx-auto flex items-center justify-between">
-        <a href="/" className="flex items-center">
-          <span className="text-xl font-bold bg-gradient-to-r from-compliance-600 to-compliance-800 bg-clip-text text-transparent">
-            ComplianceAI
+        <a href="/" className="flex items-center gap-2">
+          <img src="/lovable-uploads/e49e56a4-2b4b-4ce8-8384-a1a411e1bdbc.png" alt="Quantifier Logo" className="w-10 h-10" />
+          <span className="text-xl font-bold bg-gradient-to-r from-quantifier-purple to-quantifier-blue bg-clip-text text-transparent">
+            Quantifier
           </span>
         </a>
         
         <nav className="hidden md:flex items-center space-x-8">
-          <a href="#features" className="text-sm font-medium text-slate-700 hover:text-compliance-600 transition-colors">
+          <a href="#features" className="text-sm font-medium text-slate-700 hover:text-quantifier-purple transition-colors">
             Features
           </a>
-          <a href="#how-it-works" className="text-sm font-medium text-slate-700 hover:text-compliance-600 transition-colors">
+          <a href="#how-it-works" className="text-sm font-medium text-slate-700 hover:text-quantifier-purple transition-colors">
             How It Works
           </a>
-          <a href="#pricing" className="text-sm font-medium text-slate-700 hover:text-compliance-600 transition-colors">
-            Pricing
+          <a href="#benefits" className="text-sm font-medium text-slate-700 hover:text-quantifier-purple transition-colors">
+            Benefits
           </a>
-          <a href="#about" className="text-sm font-medium text-slate-700 hover:text-compliance-600 transition-colors">
-            About
+          <a href="#why" className="text-sm font-medium text-slate-700 hover:text-quantifier-purple transition-colors">
+            Why Quantifier
           </a>
         </nav>
         
         <div className="hidden md:flex items-center space-x-4">
-          <Button variant="ghost" className="text-sm">
-            Sign In
-          </Button>
           <Button 
-            className="bg-compliance-600 hover:bg-compliance-700 text-white transition-all shadow-sm hover:shadow-md"
+            className="bg-gradient-to-r from-quantifier-purple to-quantifier-blue text-white transition-all shadow-sm hover:shadow-md"
           >
-            Get Started
+            Book a Demo
           </Button>
         </div>
         
@@ -71,40 +69,37 @@ export const Navbar = () => {
           <div className="px-6 py-4 space-y-4">
             <a 
               href="#features" 
-              className="block py-2 text-sm font-medium text-slate-700 hover:text-compliance-600"
+              className="block py-2 text-sm font-medium text-slate-700 hover:text-quantifier-purple"
               onClick={() => setIsMobileMenuOpen(false)}
             >
               Features
             </a>
             <a 
               href="#how-it-works" 
-              className="block py-2 text-sm font-medium text-slate-700 hover:text-compliance-600"
+              className="block py-2 text-sm font-medium text-slate-700 hover:text-quantifier-purple"
               onClick={() => setIsMobileMenuOpen(false)}
             >
               How It Works
             </a>
             <a 
-              href="#pricing" 
-              className="block py-2 text-sm font-medium text-slate-700 hover:text-compliance-600"
+              href="#benefits" 
+              className="block py-2 text-sm font-medium text-slate-700 hover:text-quantifier-purple"
               onClick={() => setIsMobileMenuOpen(false)}
             >
-              Pricing
+              Benefits
             </a>
             <a 
-              href="#about" 
-              className="block py-2 text-sm font-medium text-slate-700 hover:text-compliance-600"
+              href="#why" 
+              className="block py-2 text-sm font-medium text-slate-700 hover:text-quantifier-purple"
               onClick={() => setIsMobileMenuOpen(false)}
             >
-              About
+              Why Quantifier
             </a>
             <div className="pt-4 border-t border-slate-200 flex flex-col space-y-3">
-              <Button variant="ghost" className="justify-center">
-                Sign In
-              </Button>
               <Button 
-                className="bg-compliance-600 hover:bg-compliance-700 text-white w-full justify-center"
+                className="bg-gradient-to-r from-quantifier-purple to-quantifier-blue text-white w-full justify-center"
               >
-                Get Started
+                Book a Demo
               </Button>
             </div>
           </div>

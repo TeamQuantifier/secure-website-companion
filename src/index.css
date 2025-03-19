@@ -14,7 +14,7 @@
     --popover: 0 0% 100%;
     --popover-foreground: 222 47% 11%;
 
-    --primary: 210 100% 30%;
+    --primary: 265 85% 40%;
     --primary-foreground: 210 40% 98%;
 
     --secondary: 210 40% 96%;
@@ -61,7 +61,11 @@
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    background-image: linear-gradient(90deg, hsl(var(--primary)), #4d9fff);
+    background-image: linear-gradient(90deg, #7030a0, #1e8fff);
+  }
+  
+  .bg-quantifier-gradient {
+    background: linear-gradient(135deg, #7030a0, #1e8fff);
   }
   
   .transition-smooth {
