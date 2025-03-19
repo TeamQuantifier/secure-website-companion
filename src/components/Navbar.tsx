@@ -5,11 +5,15 @@ import { Menu, X } from 'lucide-react';
 import { useTranslation } from 'react-i18next';
 import { LanguageSwitcher } from './LanguageSwitcher';
 import { scrollToContact } from '@/utils/scrollHelpers';
+import { useProcessedImage } from '@/utils/imageUtils';
 
 export const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const { t } = useTranslation();
+  
+  const logoSrc = "/lovable-uploads/5a1ee696-13e4-488a-a848-0ccd9f816b98.png";
+  const processedLogo = useProcessedImage(logoSrc);
 
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -36,7 +40,7 @@ export const Navbar = () => {
       <div className="max-w-7xl mx-auto flex items-center justify-between">
         <a href="/" className="flex items-center gap-2">
           <img 
-            src="/lovable-uploads/5a1ee696-13e4-488a-a848-0ccd9f816b98.png" 
+            src={processedLogo || logoSrc} 
             alt="Quantifier Logo" 
             className="h-8 md:h-10 object-contain" 
           />
