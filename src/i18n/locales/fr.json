@@ -32,7 +32,10 @@
     "aiAgentCollectingData": "L'agent IA collecte des données à partir de 12 systèmes différents"
   },
   "stats": {
-    "companiesEvolving": "Les entreprises évoluent."
+    "companiesEvolving": "Les entreprises évoluent.",
+    "struggling": "des entreprises luttent avec des processus de conformité manuels",
+    "reduction": "réduction du temps consacré aux tâches de conformité",
+    "confidence": "confiance accrue dans la conformité réglementaire"
   },
   "steps": {
     "title": "Conformité en 4 étapes",

@@ -32,7 +32,10 @@
     "aiAgentCollectingData": "Agentul IA colectează date din 12 sisteme diferite"
   },
   "stats": {
-    "companiesEvolving": "Companiile evoluează."
+    "companiesEvolving": "Companiile evoluează.",
+    "struggling": "dintre companii se luptă cu procese manuale de conformitate",
+    "reduction": "reducere a timpului petrecut pe sarcini de conformitate",
+    "confidence": "încredere sporită în conformitatea cu reglementările"
   },
   "steps": {
     "title": "Conformitate în 4 pași",

@@ -32,7 +32,10 @@
     "aiAgentCollectingData": "AI agent sbírá data z 12 různých systémů"
   },
   "stats": {
-    "companiesEvolving": "Společnosti se vyvíjejí."
+    "companiesEvolving": "Společnosti se vyvíjejí.",
+    "struggling": "společností bojuje s manuálními procesy dodržování předpisů",
+    "reduction": "snížení času stráveného úkoly dodržování předpisů",
+    "confidence": "zvýšená důvěra v dodržování předpisů"
   },
   "steps": {
     "title": "Dodržování předpisů ve 4 krocích",

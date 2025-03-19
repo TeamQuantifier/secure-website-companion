@@ -32,7 +32,10 @@
     "aiAgentCollectingData": "El agente de IA está recopilando datos de 12 sistemas diferentes"
   },
   "stats": {
-    "companiesEvolving": "Las empresas están evolucionando."
+    "companiesEvolving": "Las empresas están evolucionando.",
+    "struggling": "de las empresas luchan con procesos manuales de cumplimiento",
+    "reduction": "reducción en el tiempo dedicado a tareas de cumplimiento",
+    "confidence": "mayor confianza en el cumplimiento normativo"
   },
   "steps": {
     "title": "Cumplimiento en 4 pasos",

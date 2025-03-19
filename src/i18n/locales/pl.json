@@ -32,7 +32,10 @@
     "aiAgentCollectingData": "Agent AI zbiera dane z 12 różnych systemów"
   },
   "stats": {
-    "companiesEvolving": "Firmy się rozwijają."
+    "companiesEvolving": "Firmy się rozwijają.",
+    "struggling": "firm zmaga się z ręcznymi procesami zgodności",
+    "reduction": "redukcja czasu poświęconego na zadania związane ze zgodnością",
+    "confidence": "zwiększona pewność w zakresie zgodności z przepisami"
   },
   "steps": {
     "title": "Compliance w 4 krokach",

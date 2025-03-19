@@ -32,7 +32,10 @@
     "aiAgentCollectingData": "KI-Agent sammelt Daten aus 12 verschiedenen Systemen"
   },
   "stats": {
-    "companiesEvolving": "Unternehmen entwickeln sich weiter."
+    "companiesEvolving": "Unternehmen entwickeln sich weiter.",
+    "struggling": "der Unternehmen kämpfen mit manuellen Compliance-Prozessen",
+    "reduction": "Reduzierung der für Compliance-Aufgaben aufgewendeten Zeit",
+    "confidence": "gesteigertes Vertrauen in die Einhaltung von Vorschriften"
   },
   "steps": {
     "title": "Compliance in 4 Schritten",

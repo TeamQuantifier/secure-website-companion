@@ -32,7 +32,10 @@
     "aiAgentCollectingData": "AI agent is collecting data from 12 different systems"
   },
   "stats": {
-    "companiesEvolving": "Companies are evolving."
+    "companiesEvolving": "Companies are evolving.",
+    "struggling": "of companies struggle with manual compliance processes",
+    "reduction": "reduction in time spent on compliance tasks",
+    "confidence": "increased confidence in regulatory compliance"
   },
   "steps": {
     "title": "Compliance in 4 Steps",
