@@ -8,12 +8,17 @@ export const Navbar = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   useEffect(() => {
-    const handleScroll = () => {
-      setIsScrolled(window.scrollY > 10);
-    };
-    
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          setIsScrolled(window.scrollY > 10);
+        }
+      },
+      { threshold: 0.2 }
+    );
+
+    window.addEventListener('scroll', () => setIsScrolled(window.scrollY > 10));
+    return () => window.removeEventListener('scroll', () => setIsScrolled(window.scrollY > 10));
   }, []);
 
   return (
@@ -26,7 +31,11 @@ export const Navbar = () => {
     >
       <div className="max-w-7xl mx-auto flex items-center justify-between">
         <a href="/" className="flex items-center gap-2">
-          <img src="/lovable-uploads/e49e56a4-2b4b-4ce8-8384-a1a411e1bdbc.png" alt="Quantifier Logo" className="w-10 h-10" />
+          <img 
+            src="/lovable-uploads/2ea1897e-5b07-4e20-9e92-86148455aeba.png" 
+            alt="Quantifier Logo" 
+            className="h-8 md:h-10" 
+          />
           <span className="text-xl font-bold bg-gradient-to-r from-quantifier-purple to-quantifier-blue bg-clip-text text-transparent">
             Quantifier
           </span>
