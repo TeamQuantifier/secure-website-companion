@@ -8,6 +8,7 @@ import { Benefits } from "@/components/Benefits";
 import { WhyQuantifier } from "@/components/WhyQuantifier";
 import { AgentFlow } from "@/components/AgentFlow";
 import { CTA } from "@/components/CTA";
+import { ContactForm } from "@/components/ContactForm";
 import { Footer } from "@/components/Footer";
 
 const Index = () => {
@@ -22,6 +23,7 @@ const Index = () => {
         <Features />
         <Benefits />
         <WhyQuantifier />
+        <ContactForm />
         <CTA />
       </main>
       <Footer />

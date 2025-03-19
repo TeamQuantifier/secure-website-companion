@@ -1,13 +1,10 @@
 
 import { useState, useRef, useEffect } from 'react';
 import { Button } from "@/components/ui/button";
-import { ArrowRight, CheckCircle2 } from 'lucide-react';
-import { Input } from "@/components/ui/input";
+import { ArrowRight } from 'lucide-react';
 
 export const CTA = () => {
   const [isInView, setIsInView] = useState(false);
-  const [email, setEmail] = useState('');
-  const [isSubmitted, setIsSubmitted] = useState(false);
   const sectionRef = useRef<HTMLElement>(null);
 
   useEffect(() => {
@@ -28,21 +25,6 @@ export const CTA = () => {
     return () => observer.disconnect();
   }, []);
 
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    if (!email.trim()) return;
-    
-    // In a real app, you would send this to your API
-    console.log('Email submitted:', email);
-    setIsSubmitted(true);
-    
-    // Reset after 3 seconds
-    setTimeout(() => {
-      setIsSubmitted(false);
-      setEmail('');
-    }, 3000);
-  };
-
   return (
     <section 
       ref={sectionRef}
@@ -62,59 +44,22 @@ export const CTA = () => {
           
           <div className="bg-white rounded-2xl shadow-elevated p-8 border border-slate-200/80 max-w-xl mx-auto">
             <h3 className="text-xl font-semibold text-slate-800 mb-2">
-              Join the Waitlist
+              Ready to Transform Your Compliance Process?
             </h3>
             
             <p className="text-slate-600 mb-6">
-              Be among the first to experience our AI compliance assistant.
+              Schedule a personalized demo to see how our AI compliance assistant can help your organization.
             </p>
             
-            <form onSubmit={handleSubmit} className="space-y-4">
-              <div className="flex flex-col sm:flex-row gap-3">
-                <Input
-                  type="email"
-                  placeholder="Your work email"
-                  value={email}
-                  onChange={(e) => setEmail(e.target.value)}
-                  required
-                  className="flex-1"
-                />
-                
-                <Button 
-                  type="submit"
-                  className={`bg-gradient-to-r from-quantifier-purple to-quantifier-blue text-white transition-all group ${
-                    isSubmitted ? 'bg-green-600 hover:bg-green-700' : ''
-                  }`}
-                  disabled={isSubmitted}
-                >
-                  {isSubmitted ? (
-                    <>
-                      <CheckCircle2 className="mr-2 h-4 w-4" />
-                      <span>Request Sent</span>
-                    </>
-                  ) : (
-                    <>
-                      <span>Join Waitlist</span>
-                      <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
-                    </>
-                  )}
-                </Button>
-              </div>
-            </form>
-            
-            <div className="flex items-center justify-center mt-8">
+            <div className="flex items-center justify-center">
               <Button 
-                className="bg-slate-100 hover:bg-slate-200 text-slate-700 transition-all"
-                variant="outline"
+                className="bg-gradient-to-r from-quantifier-purple to-quantifier-blue text-white transition-all shadow-md hover:shadow-lg group"
+                size="lg"
               >
                 <span>Book a Demo</span>
-                <ArrowRight className="ml-2 h-4 w-4" />
+                <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
               </Button>
             </div>
-            
-            <p className="text-xs text-slate-500 mt-4">
-              By submitting, you agree to our Privacy Policy and Terms of Service.
-            </p>
           </div>
         </div>
       </div>

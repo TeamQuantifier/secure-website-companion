@@ -32,7 +32,7 @@ export const Navbar = () => {
       <div className="max-w-7xl mx-auto flex items-center justify-between">
         <a href="/" className="flex items-center gap-2">
           <img 
-            src="/lovable-uploads/2ea1897e-5b07-4e20-9e92-86148455aeba.png" 
+            src="/lovable-uploads/a063b189-54c2-413c-bd4c-4a827843ffae.png" 
             alt="Quantifier Logo" 
             className="h-8 md:h-10" 
           />
@@ -53,6 +53,9 @@ export const Navbar = () => {
           </a>
           <a href="#why" className="text-sm font-medium text-slate-700 hover:text-quantifier-purple transition-colors">
             Why Quantifier
+          </a>
+          <a href="#contact" className="text-sm font-medium text-slate-700 hover:text-quantifier-purple transition-colors">
+            Contact Us
           </a>
         </nav>
         
@@ -103,6 +106,13 @@ export const Navbar = () => {
               onClick={() => setIsMobileMenuOpen(false)}
             >
               Why Quantifier
+            </a>
+            <a 
+              href="#contact" 
+              className="block py-2 text-sm font-medium text-slate-700 hover:text-quantifier-purple"
+              onClick={() => setIsMobileMenuOpen(false)}
+            >
+              Contact Us
             </a>
             <div className="pt-4 border-t border-slate-200 flex flex-col space-y-3">
               <Button 

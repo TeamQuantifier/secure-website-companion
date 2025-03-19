@@ -1,4 +1,3 @@
-
 import { useState, useEffect } from 'react';
 import { Button } from "@/components/ui/button";
 import { ArrowRight, ShieldCheck, FileCheck, Clock, PieChart, Bot, Database, CheckCircle } from 'lucide-react';
@@ -56,7 +55,7 @@ export const Hero = () => {
                 <span className="text-gradient">Quantifier.</span> The AI Agent for Compliance.
               </h1>
               
-              <p className="mt-6 text-lg text-slate-600 max-w-lg animate-slide-up animate-delay-400">
+              <p className="mt-6 text-lg md:text-xl lg:text-2xl font-semibold text-quantifier-purple bg-quantifier-purple/5 px-4 py-3 rounded-lg border border-quantifier-purple/20 shadow-sm animate-slide-up animate-delay-400">
                 Automated, Comprehensive, and Built for Confidence.
               </p>
               
@@ -77,14 +76,6 @@ export const Hero = () => {
               >
                 <span>Book a Demo</span>
                 <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
-              </Button>
-              
-              <Button 
-                variant="outline" 
-                size="lg"
-                className="border-quantifier-purple/20 text-quantifier-purple hover:bg-quantifier-purple/5 shadow-sm"
-              >
-                Join the Waitlist
               </Button>
             </div>
             
@@ -259,7 +250,6 @@ export const Hero = () => {
               </div>
             </Card>
             
-            {/* Decorative elements */}
             <div className="absolute -bottom-6 -right-6 w-64 h-64 bg-quantifier-blue/10 rounded-full blur-3xl opacity-70 animate-pulse-slow"></div>
             <div className="absolute -z-10 top-1/4 -left-6 w-20 h-20 rounded-full border border-quantifier-purple/20 animate-float"></div>
             <div className="absolute -z-10 bottom-10 right-10 w-12 h-12 rounded-full border border-quantifier-blue/20 animate-float animate-delay-500"></div>

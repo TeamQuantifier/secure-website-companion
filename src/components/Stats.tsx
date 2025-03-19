@@ -1,5 +1,8 @@
 
 import { useState, useEffect, useRef } from 'react';
+import { Badge } from "@/components/ui/badge";
+import { Button } from "@/components/ui/button";
+import { CheckCircle } from 'lucide-react';
 
 export const Stats = () => {
   const [isInView, setIsInView] = useState(false);
@@ -61,63 +64,83 @@ export const Stats = () => {
         </div>
         
         {/* Improved Trusted Us Section */}
-        <div className="mt-20 text-center">
-          <div className={`inline-block px-4 py-2 bg-quantifier-purple/10 rounded-full mb-8 ${isInView ? 'animate-fade-in animate-delay-500' : 'opacity-0'}`}>
-            <p className="text-quantifier-purple font-semibold text-sm">
-              TRUSTED BY INDUSTRY LEADERS
-            </p>
-          </div>
-          
-          <h3 className={`text-2xl md:text-3xl font-bold text-slate-800 mb-8 ${isInView ? 'animate-fade-in animate-delay-500' : 'opacity-0'}`}>
-            Over 200 companies have trusted us with their<br />sustainability compliance reporting
-          </h3>
-          
-          <div className={`flex flex-col items-center ${isInView ? 'animate-fade-in animate-delay-600' : 'opacity-0'}`}>
-            {/* Featured Partner */}
-            <div className="mb-12 p-6 bg-white/80 backdrop-blur-sm rounded-xl shadow-sm border border-slate-200/60 max-w-md mx-auto">
-              <img 
-                src="/lovable-uploads/47bb3eda-563c-4485-8617-22339f1c1d39.png" 
-                alt="TÜV NORD" 
-                className="h-20 object-contain mx-auto mb-4"
-              />
-              <p className="text-slate-700 font-medium italic">
-                "Quantifier has revolutionized our compliance process, reducing our reporting time by 70%."
-              </p>
-              <p className="mt-3 text-sm text-slate-500">
-                — Mark Schmidt, Director of Compliance
-              </p>
-            </div>
-            
-            {/* Logos Grid */}
-            <div className="w-full mt-8">
-              <div className="text-center mb-6">
-                <p className="text-slate-500 font-medium">ALSO TRUSTED BY</p>
+        <div className="mt-20">
+          <div className={`max-w-5xl mx-auto bg-white/80 backdrop-blur-sm rounded-2xl shadow-elevated border border-slate-200/60 overflow-hidden ${isInView ? 'animate-fade-in animate-delay-500' : 'opacity-0'}`}>
+            <div className="grid md:grid-cols-2 items-center">
+              {/* TÜV NORD Certification Section */}
+              <div className="p-8 md:p-12 bg-gradient-to-br from-quantifier-darkpurple/10 to-quantifier-blue/10">
+                <Badge className="bg-quantifier-purple text-white mb-4">TÜV NORD CERTIFIED</Badge>
+                <h3 className="text-2xl md:text-3xl font-bold text-slate-800 mb-4">
+                  Certified Excellence in Compliance Solutions
+                </h3>
+                <p className="text-slate-600 mb-6">
+                  Our compliance solution is certified by TÜV NORD, guaranteeing the highest standards of security, reliability, and quality in our AI-powered solutions.
+                </p>
+                <div className="space-y-3 mb-6">
+                  <div className="flex items-start gap-2">
+                    <CheckCircle className="h-5 w-5 text-quantifier-purple mt-0.5" />
+                    <p className="text-slate-700">Certified data security and privacy protocols</p>
+                  </div>
+                  <div className="flex items-start gap-2">
+                    <CheckCircle className="h-5 w-5 text-quantifier-purple mt-0.5" />
+                    <p className="text-slate-700">Independently validated compliance methodologies</p>
+                  </div>
+                  <div className="flex items-start gap-2">
+                    <CheckCircle className="h-5 w-5 text-quantifier-purple mt-0.5" />
+                    <p className="text-slate-700">Regular audits ensure continued excellence</p>
+                  </div>
+                </div>
+                <Button variant="outline" className="border-quantifier-purple/30 text-quantifier-purple hover:bg-quantifier-purple/5">
+                  View Certification Details
+                </Button>
               </div>
               
-              <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-3xl mx-auto">
-                <div className="bg-white/80 backdrop-blur-sm rounded-lg p-5 flex items-center justify-center shadow-sm border border-slate-200/40 transition-all hover:shadow-md">
-                  <img 
-                    src="/lovable-uploads/99ff3f42-89f3-4c45-b976-cf9cff5d6dc3.png" 
-                    alt="Client Logo 1" 
-                    className="h-10 md:h-12 object-contain"
-                  />
+              {/* TÜV NORD Logo Section */}
+              <div className="p-8 md:p-12 flex flex-col items-center justify-center bg-white">
+                <img 
+                  src="/lovable-uploads/47bb3eda-563c-4485-8617-22339f1c1d39.png" 
+                  alt="TÜV NORD Certification" 
+                  className="h-32 md:h-40 object-contain mx-auto mb-6"
+                />
+                <div className="text-center">
+                  <p className="text-slate-700 font-medium italic mb-4">
+                    "Quantifier has revolutionized our compliance process, reducing our reporting time by 70%."
+                  </p>
+                  <p className="text-sm text-slate-500">
+                    — Mark Schmidt, Director of Compliance
+                  </p>
                 </div>
-                
-                <div className="bg-white/80 backdrop-blur-sm rounded-lg p-5 flex items-center justify-center shadow-sm border border-slate-200/40 transition-all hover:shadow-md">
-                  <img 
-                    src="/lovable-uploads/d33c8b89-5883-40c7-af9a-c7eae6d62703.png" 
-                    alt="Client Logo 2" 
-                    className="h-10 md:h-12 object-contain"
-                  />
-                </div>
-                
-                <div className="bg-white/80 backdrop-blur-sm rounded-lg p-5 flex items-center justify-center shadow-sm border border-slate-200/40 transition-all hover:shadow-md">
-                  <img 
-                    src="/lovable-uploads/fe277b04-5c32-4263-865c-1f0111aa42d0.png" 
-                    alt="Client Logo 3" 
-                    className="h-10 md:h-12 object-contain"
-                  />
-                </div>
+              </div>
+            </div>
+          </div>
+          
+          {/* Trusted By Logos */}
+          <div className="mt-16 text-center">
+            <p className="text-lg font-semibold text-slate-700 mb-8">TRUSTED BY INDUSTRY LEADERS</p>
+            
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-4xl mx-auto">
+              <div className="bg-white/80 backdrop-blur-sm rounded-lg p-5 flex items-center justify-center shadow-sm border border-slate-200/40 transition-all hover:shadow-md">
+                <img 
+                  src="/lovable-uploads/99ff3f42-89f3-4c45-b976-cf9cff5d6dc3.png" 
+                  alt="Client Logo 1" 
+                  className="h-12 md:h-16 object-contain"
+                />
+              </div>
+              
+              <div className="bg-white/80 backdrop-blur-sm rounded-lg p-5 flex items-center justify-center shadow-sm border border-slate-200/40 transition-all hover:shadow-md">
+                <img 
+                  src="/lovable-uploads/d33c8b89-5883-40c7-af9a-c7eae6d62703.png" 
+                  alt="Client Logo 2" 
+                  className="h-12 md:h-16 object-contain"
+                />
+              </div>
+              
+              <div className="bg-white/80 backdrop-blur-sm rounded-lg p-5 flex items-center justify-center shadow-sm border border-slate-200/40 transition-all hover:shadow-md">
+                <img 
+                  src="/lovable-uploads/fe277b04-5c32-4263-865c-1f0111aa42d0.png" 
+                  alt="Client Logo 3" 
+                  className="h-12 md:h-16 object-contain"
+                />
               </div>
             </div>
           </div>
