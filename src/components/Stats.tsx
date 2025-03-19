@@ -2,7 +2,7 @@
 import { useState, useEffect, useRef } from 'react';
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
-import { CheckCircle, Mail } from 'lucide-react';
+import { CheckCircle } from 'lucide-react';
 
 export const Stats = () => {
   const [isInView, setIsInView] = useState(false);
@@ -36,11 +36,7 @@ export const Stats = () => {
       <div className="relative z-10 max-w-7xl mx-auto px-6 lg:px-8">
         <div className="text-center max-w-3xl mx-auto mb-12">
           <h2 className={`text-3xl md:text-4xl font-bold text-slate-800 mb-6 ${isInView ? 'animate-slide-up' : 'opacity-0'}`}>
-            Companies are evolving.<br />
-            <a href="#contact" className="text-quantifier-purple hover:text-quantifier-purple/80 inline-flex items-center">
-              <Mail className="mr-2 h-6 w-6" />
-              contact us
-            </a>
+            Companies are evolving.
           </h2>
         </div>
         

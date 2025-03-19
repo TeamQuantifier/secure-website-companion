@@ -9,7 +9,7 @@ export const Footer = () => {
           <div>
             <div className="flex items-center mb-4">
               <img 
-                src="/lovable-uploads/d300b783-71c1-4a77-83d9-ac99e76df15d.png" 
+                src="/lovable-uploads/5a1ee696-13e4-488a-a848-0ccd9f816b98.png" 
                 alt="Quantifier Logo" 
                 className="h-10 mr-2"
               />
