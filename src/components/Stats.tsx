@@ -49,7 +49,7 @@ export const Stats = () => {
           </div>
           
           <div className={`bg-white rounded-xl p-8 border border-slate-200/60 shadow-sm text-center ${isInView ? 'animate-fade-in animate-delay-300' : 'opacity-0'}`}>
-            <div className="text-4xl md:text-5xl font-bold text-quantifier-purple mb-2">Countless</div>
+            <div className="text-4xl md:text-5xl font-bold text-quantifier-purple mb-2">∞</div>
             <p className="text-slate-600">nerves lost</p>
           </div>
         </div>
@@ -66,10 +66,33 @@ export const Stats = () => {
           </p>
           
           <div className={`flex flex-wrap justify-center items-center gap-8 md:gap-16 ${isInView ? 'animate-fade-in animate-delay-600' : 'opacity-0'}`}>
-            <div className="bg-white p-4 rounded-lg shadow-sm">
-              <div className="text-2xl font-bold text-quantifier-purple">TÜV + NORD</div>
+            <div className="p-4">
+              <img 
+                src="/lovable-uploads/47bb3eda-563c-4485-8617-22339f1c1d39.png" 
+                alt="TÜV NORD" 
+                className="h-20 object-contain"
+              />
             </div>
-            {/* Add more trusted company logos here */}
+            
+            <div className="flex flex-wrap justify-center items-center gap-8 mt-8">
+              <div className="flex flex-wrap justify-center items-center gap-x-12 gap-y-8">
+                <img 
+                  src="/lovable-uploads/99ff3f42-89f3-4c45-b976-cf9cff5d6dc3.png" 
+                  alt="Client Logos 1" 
+                  className="h-12 object-contain"
+                />
+                <img 
+                  src="/lovable-uploads/d33c8b89-5883-40c7-af9a-c7eae6d62703.png" 
+                  alt="Client Logos 2" 
+                  className="h-12 object-contain"
+                />
+                <img 
+                  src="/lovable-uploads/fe277b04-5c32-4263-865c-1f0111aa42d0.png" 
+                  alt="Client Logos 3" 
+                  className="h-12 object-contain"
+                />
+              </div>
+            </div>
           </div>
         </div>
       </div>

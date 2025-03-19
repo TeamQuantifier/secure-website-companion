@@ -108,8 +108,9 @@ export const WhyQuantifier = () => {
           <div className={`inline-block bg-quantifier-purple/10 border border-quantifier-purple/20 rounded-lg px-6 py-4 text-slate-800 mb-16 ${isInView ? 'animate-slide-up animate-delay-200' : 'opacity-0'}`}>
             <p className="font-semibold text-quantifier-purple text-lg">
               <span className="underline decoration-2 decoration-quantifier-purple/70">
-                Our AI agent significantly automates the entire compliance process
-              </span>
+                Your right hand AI Agent Compliance Officer
+              </span> that manages projects, collects data across your organization, and 
+              showcases results—significantly automating the entire compliance process.
             </p>
           </div>
         </div>
@@ -146,9 +147,9 @@ export const WhyQuantifier = () => {
               
               <div className="pt-4 flex flex-col space-y-4">
                 <img 
-                  src="/lovable-uploads/e49e56a4-2b4b-4ce8-8384-a1a411e1bdbc.png" 
+                  src="/lovable-uploads/a063b189-54c2-413c-bd4c-4a827843ffae.png" 
                   alt="Quantifier Logo" 
-                  className="h-16 w-16 mx-auto mb-4"
+                  className="h-16 mx-auto mb-4"
                 />
                 
                 <div className="text-2xl font-bold bg-gradient-to-r from-quantifier-purple to-quantifier-blue bg-clip-text text-transparent">

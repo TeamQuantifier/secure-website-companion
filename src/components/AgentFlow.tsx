@@ -220,8 +220,8 @@ export const AgentFlow = () => {
         <div className={`bg-gradient-to-br from-quantifier-purple/90 to-quantifier-blue/90 rounded-2xl shadow-elevated p-8 text-white ${isInView ? 'animate-fade-in animate-delay-300' : 'opacity-0'}`}>
           <div className="text-center max-w-3xl mx-auto">
             <h3 className="text-2xl font-bold mb-4">
-              Not just a tool, but a <span className="underline decoration-2 decoration-white/70">
-                complete AI agent compliance officer
+              <span className="underline decoration-2 decoration-white/70">
+                Your right hand AI Agent Compliance Officer
               </span>
             </h3>
             
