@@ -1,6 +1,9 @@
 
 import { useState, useEffect, useRef } from 'react';
-import { Bot, Layers, Sparkles, Clock, Database, FileCheck, Shield } from 'lucide-react';
+import { Bot, Layers, Sparkles, Clock, Database, FileCheck, Shield, ArrowRight } from 'lucide-react';
+import { Button } from "@/components/ui/button";
+import { Input } from "@/components/ui/input";
+import { useToast } from "@/hooks/use-toast";
 
 const reasons = [
   {
@@ -58,7 +61,10 @@ const additionalReasons = [
 
 export const WhyQuantifier = () => {
   const [isInView, setIsInView] = useState(false);
+  const [email, setEmail] = useState('');
+  const [isSubmitting, setIsSubmitting] = useState(false);
   const sectionRef = useRef<HTMLElement>(null);
+  const { toast } = useToast();
 
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -77,6 +83,23 @@ export const WhyQuantifier = () => {
 
     return () => observer.disconnect();
   }, []);
+
+  const handleSubmit = (e: React.FormEvent) => {
+    e.preventDefault();
+    if (!email) return;
+    
+    setIsSubmitting(true);
+    
+    // Simulate form submission
+    setTimeout(() => {
+      toast({
+        title: "Thanks for contacting us!",
+        description: "We'll get back to you soon.",
+      });
+      setEmail('');
+      setIsSubmitting(false);
+    }, 1000);
+  };
 
   return (
     <section 
@@ -141,22 +164,36 @@ export const WhyQuantifier = () => {
                 Compliance should too.
               </h3>
               
-              <p className="text-slate-600">
+              <p className="text-slate-600 mb-8">
                 Join forward-thinking organizations that are transforming their compliance from a burden into a competitive advantage.
               </p>
               
-              <div className="pt-4 flex flex-col space-y-4">
-                <img 
-                  src="/lovable-uploads/a063b189-54c2-413c-bd4c-4a827843ffae.png" 
-                  alt="Quantifier Logo" 
-                  className="h-16 mx-auto mb-4"
-                />
-                
-                <div className="text-2xl font-bold bg-gradient-to-r from-quantifier-purple to-quantifier-blue bg-clip-text text-transparent">
-                  Quantifier
-                </div>
-                
-                <p className="text-sm text-slate-500">The AI Agent for Compliance</p>
+              {/* Contact Form - Replaces Quantifier Logo */}
+              <div className="max-w-md mx-auto">
+                <h4 className="text-xl font-semibold text-quantifier-purple mb-4">Contact Us</h4>
+                <form onSubmit={handleSubmit} className="space-y-4">
+                  <div>
+                    <Input
+                      type="email"
+                      placeholder="Enter your email"
+                      value={email}
+                      onChange={(e) => setEmail(e.target.value)}
+                      required
+                      className="border-quantifier-purple/30 focus:border-quantifier-purple"
+                    />
+                  </div>
+                  <Button 
+                    type="submit"
+                    className="w-full bg-gradient-to-r from-quantifier-purple to-quantifier-blue text-white"
+                    disabled={isSubmitting}
+                  >
+                    {isSubmitting ? "Sending..." : "Get in Touch"}
+                    <ArrowRight className="ml-2 h-4 w-4" />
+                  </Button>
+                </form>
+                <p className="text-sm text-slate-500 mt-4">
+                  We'll get back to you as soon as possible
+                </p>
               </div>
             </div>
           </div>
