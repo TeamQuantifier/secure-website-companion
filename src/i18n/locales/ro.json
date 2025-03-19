@@ -1,0 +1,125 @@
+
+{
+  "navbar": {
+    "features": "Funcționalități",
+    "howItWorks": "Cum funcționează",
+    "benefits": "Beneficii",
+    "whyQuantifier": "De ce Quantifier",
+    "contactUs": "Contactați-ne",
+    "bookDemo": "Programează o demonstrație"
+  },
+  "hero": {
+    "aiPowered": "Conformitate bazată pe IA",
+    "title": "Quantifier. Agentul IA pentru conformitate.",
+    "subtitle": "Automatizat, Cuprinzător și Construit pentru Încredere.",
+    "description": "Ofițerul de Conformitate cu Agent IA ca mâna dreaptă care gestionează proiecte, colectează date din întreaga organizație și prezintă rezultate—automatizând semnificativ întregul proces de conformitate.",
+    "bookDemo": "Programează o demonstrație",
+    "legalCompliance": "Conformitate legală",
+    "aiAgent": "Agent IA",
+    "timeSaving": "Economisire de timp",
+    "dashboard": "Tablou de bord pentru conformitate",
+    "realtime": "Stare de conformitate în timp real",
+    "overview": "Prezentare generală",
+    "aiCollection": "Colectare IA",
+    "projectCompleteness": "Completarea proiectului",
+    "dataCollectionStatus": "Starea colectării datelor",
+    "aiAgentCollecting": "Agentul IA colectează automat date de conformitate",
+    "aiAgentActive": "Agent IA activ",
+    "department": "Departament",
+    "status": "Stare",
+    "progress": "Progres",
+    "documents": "Documente",
+    "aiAgentCollectingData": "Agentul IA colectează date din 12 sisteme diferite"
+  },
+  "stats": {
+    "companiesEvolving": "Companiile evoluează."
+  },
+  "steps": {
+    "title": "Conformitate în 4 pași",
+    "description": "Abordarea noastră simplificată pentru a face conformitatea simplă, eficientă și fiabilă.",
+    "step1": {
+      "title": "Automatizează conformitatea cu Agentul IA Quantifier",
+      "description": "Lasă IA-ul nostru să gestioneze procesele de conformitate de la colectarea datelor până la raportare."
+    },
+    "step2": {
+      "title": "Centralizează toate cerințele de reglementare",
+      "description": "Păstrează toate cerințele de conformitate într-o locație accesibilă."
+    },
+    "step3": {
+      "title": "Urmărește și raportează cu un tablou de bord în timp real",
+      "description": "Monitorizează starea conformității cu vizualizări și rapoarte intuitive."
+    },
+    "step4": {
+      "title": "Rămâi în față cu actualizări continue de conformitate",
+      "description": "Primește actualizări automate când se schimbă reglementările care afectează afacerea ta."
+    }
+  },
+  "agentFlow": {
+    "aiAgentFlow": "Fluxul Agentului IA",
+    "complianceProjectStatus": "Conformitate continuă pe pilot automat cu Agentul IA Quantifier",
+    "description": "Vizualizăm cum agentul nostru IA colectează date de conformitate din întreaga organizație și automatizează întregul proces.",
+    "projectPhases": "Fazele proiectului",
+    "dataCollection": "Colectarea datelor",
+    "dataAnalysis": "Analiza datelor",
+    "reportGeneration": "Generarea rapoartelor",
+    "overallProjectCompletion": "Finalizarea generală a proiectului",
+    "organizationalDataCollection": "Colectarea datelor organizaționale",
+    "department": "Departament",
+    "aiAgentActive": "Agent IA activ",
+    "dataCollectionAutomation": "Automatizarea colectării datelor",
+    "aiAgentCollected": "Agentul IA a colectat automat 84 de documente din întreaga organizație, eliminând colectarea manuală a datelor.",
+    "yourRightHand": "Ofițerul de Conformitate cu Agent IA ca mâna dreaptă",
+    "ourAiAgent": "Agentul nostru IA gestionează proiecte, colectează date din întreaga organizație și prezintă rezultate—automatizând semnificativ întregul proces de conformitate.",
+    "crossOrganizational": "Interorganizațional"
+  },
+  "benefits": {
+    "title": "Beneficii",
+    "whatYouGet": "Ce primești",
+    "description": "Quantifier oferă o soluție completă de gestionare a conformității cu aceste beneficii puternice.",
+    "continuousCompliance": {
+      "title": "Conformitate continuă",
+      "description": "Nu mai e nevoie să stingi incendii. Rămâi conform în orice moment cu monitorizare proactivă."
+    },
+    "aiPoweredRegulatory": {
+      "title": "Asistent de reglementare bazat pe IA",
+      "description": "IA-ul nostru știe ce ai nevoie înainte să știi tu, anticipând cerințele de reglementare."
+    },
+    "seamlessIntegrations": {
+      "title": "Integrări fără probleme",
+      "description": "Funcționează cu sistemele tale existente ERP, HR, Excel și alte sisteme de afaceri."
+    },
+    "automatedReports": {
+      "title": "Rapoarte automatizate",
+      "description": "Generează rapoarte gata de trimis care îndeplinesc cerințele auditorilor și ale reglementărilor."
+    },
+    "realTimeDashboard": {
+      "title": "Tablou de bord în timp real",
+      "description": "Știi mereu unde te afli cu vizualizări intuitive ale stării de conformitate."
+    }
+  },
+  "cta": {
+    "title": "Începe-ți călătoria de conformitate astăzi",
+    "description": "Alătură-te companiilor orientate spre viitor care folosesc Quantifier pentru a-și transforma procesele de conformitate.",
+    "readyToTransform": "Gata să-ți transformi procesul de conformitate?",
+    "scheduleDemo": "Programează o demonstrație personalizată pentru a vedea cum asistentul nostru de conformitate bazat pe IA poate ajuta organizația ta.",
+    "bookDemo": "Programează o demonstrație"
+  },
+  "footer": {
+    "description": "Soluții de conformitate bazate pe IA care ajută companiile să navigheze cu ușurință prin peisaje de reglementare complexe.",
+    "contact": "Contact",
+    "address": "447 Sutter St Ste 405 PMB 137, San Francisco, CA 94108",
+    "rights": "Toate drepturile rezervate.",
+    "privacyPolicy": "Politica de confidențialitate",
+    "termsOfService": "Termeni de utilizare",
+    "cookies": "Cookie-uri"
+  },
+  "language": {
+    "en": "Engleză",
+    "de": "Germană",
+    "es": "Spaniolă",
+    "pl": "Poloneză",
+    "ro": "Română",
+    "cz": "Cehă",
+    "fr": "Franceză"
+  }
+}

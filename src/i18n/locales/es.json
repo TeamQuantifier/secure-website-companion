@@ -1,0 +1,125 @@
+
+{
+  "navbar": {
+    "features": "Características",
+    "howItWorks": "Cómo funciona",
+    "benefits": "Beneficios",
+    "whyQuantifier": "Por qué Quantifier",
+    "contactUs": "Contáctenos",
+    "bookDemo": "Reservar demo"
+  },
+  "hero": {
+    "aiPowered": "Cumplimiento impulsado por IA",
+    "title": "Quantifier. El Agente de IA para Cumplimiento.",
+    "subtitle": "Automatizado, Integral y Creado para la Confianza.",
+    "description": "Su Oficial de Cumplimiento con Agente de IA como mano derecha que gestiona proyectos, recopila datos en toda su organización y muestra resultados, automatizando significativamente todo el proceso de cumplimiento.",
+    "bookDemo": "Reservar demo",
+    "legalCompliance": "Cumplimiento legal",
+    "aiAgent": "Agente de IA",
+    "timeSaving": "Ahorro de tiempo",
+    "dashboard": "Panel de cumplimiento",
+    "realtime": "Estado de cumplimiento en tiempo real",
+    "overview": "Visión general",
+    "aiCollection": "Recopilación de IA",
+    "projectCompleteness": "Integridad del proyecto",
+    "dataCollectionStatus": "Estado de recopilación de datos",
+    "aiAgentCollecting": "El agente de IA recopila automáticamente datos de cumplimiento",
+    "aiAgentActive": "Agente de IA activo",
+    "department": "Departamento",
+    "status": "Estado",
+    "progress": "Progreso",
+    "documents": "Documentos",
+    "aiAgentCollectingData": "El agente de IA está recopilando datos de 12 sistemas diferentes"
+  },
+  "stats": {
+    "companiesEvolving": "Las empresas están evolucionando."
+  },
+  "steps": {
+    "title": "Cumplimiento en 4 pasos",
+    "description": "Nuestro enfoque optimizado para hacer el cumplimiento simple, eficiente y confiable.",
+    "step1": {
+      "title": "Automatice el cumplimiento con el Agente de IA de Quantifier",
+      "description": "Deje que nuestra IA maneje sus procesos de cumplimiento, desde la recopilación de datos hasta la elaboración de informes."
+    },
+    "step2": {
+      "title": "Centralice todos los requisitos regulatorios",
+      "description": "Mantenga todos sus requisitos de cumplimiento en un lugar accesible."
+    },
+    "step3": {
+      "title": "Seguimiento e informes con un panel en tiempo real",
+      "description": "Supervise su estado de cumplimiento con visualizaciones e informes intuitivos."
+    },
+    "step4": {
+      "title": "Adelántese con actualizaciones continuas de cumplimiento",
+      "description": "Reciba actualizaciones automáticas cuando cambien las regulaciones que afectan a su negocio."
+    }
+  },
+  "agentFlow": {
+    "aiAgentFlow": "Flujo del Agente de IA",
+    "complianceProjectStatus": "Cumplimiento continuo en piloto automático con el Agente de IA Quantifier",
+    "description": "Visualizando cómo nuestro agente de IA recopila datos de cumplimiento en toda su organización y automatiza todo el proceso.",
+    "projectPhases": "Fases del proyecto",
+    "dataCollection": "Recopilación de datos",
+    "dataAnalysis": "Análisis de datos",
+    "reportGeneration": "Generación de informes",
+    "overallProjectCompletion": "Finalización general del proyecto",
+    "organizationalDataCollection": "Recopilación de datos organizacionales",
+    "department": "Departamento",
+    "aiAgentActive": "Agente de IA activo",
+    "dataCollectionAutomation": "Automatización de recopilación de datos",
+    "aiAgentCollected": "El agente de IA ha recopilado automáticamente 84 documentos de toda la organización, eliminando la recopilación manual de datos.",
+    "yourRightHand": "Su Oficial de Cumplimiento con Agente de IA como mano derecha",
+    "ourAiAgent": "Nuestro agente de IA gestiona proyectos, recopila datos en toda su organización y muestra resultados, automatizando significativamente todo el proceso de cumplimiento.",
+    "crossOrganizational": "Transorganizacional"
+  },
+  "benefits": {
+    "title": "Beneficios",
+    "whatYouGet": "Lo que obtienes",
+    "description": "Quantifier ofrece una solución completa de gestión de cumplimiento con estos potentes beneficios.",
+    "continuousCompliance": {
+      "title": "Cumplimiento continuo",
+      "description": "No más apagar incendios. Mantente en cumplimiento en todo momento con monitoreo proactivo."
+    },
+    "aiPoweredRegulatory": {
+      "title": "Asistente regulatorio impulsado por IA",
+      "description": "Nuestra IA sabe lo que necesitas antes que tú, anticipando requisitos regulatorios."
+    },
+    "seamlessIntegrations": {
+      "title": "Integraciones perfectas",
+      "description": "Funciona con tus sistemas existentes de ERP, RRHH, Excel y otros sistemas empresariales."
+    },
+    "automatedReports": {
+      "title": "Informes automatizados",
+      "description": "Genera informes listos para enviar que cumplen con los requisitos de auditores y reguladores."
+    },
+    "realTimeDashboard": {
+      "title": "Panel en tiempo real",
+      "description": "Conoce siempre tu situación con visualizaciones intuitivas de tu estado de cumplimiento."
+    }
+  },
+  "cta": {
+    "title": "Comienza tu viaje de cumplimiento hoy",
+    "description": "Únete a empresas visionarias que utilizan Quantifier para transformar sus procesos de cumplimiento.",
+    "readyToTransform": "¿Listo para transformar tu proceso de cumplimiento?",
+    "scheduleDemo": "Programa una demo personalizada para ver cómo nuestro asistente de cumplimiento con IA puede ayudar a tu organización.",
+    "bookDemo": "Reservar demo"
+  },
+  "footer": {
+    "description": "Soluciones de cumplimiento impulsadas por IA que ayudan a las empresas a navegar por complejos panoramas regulatorios con facilidad.",
+    "contact": "Contacto",
+    "address": "447 Sutter St Ste 405 PMB 137, San Francisco, CA 94108",
+    "rights": "Todos los derechos reservados.",
+    "privacyPolicy": "Política de privacidad",
+    "termsOfService": "Términos de servicio",
+    "cookies": "Cookies"
+  },
+  "language": {
+    "en": "Inglés",
+    "de": "Alemán",
+    "es": "Español",
+    "pl": "Polaco",
+    "ro": "Rumano",
+    "cz": "Checo",
+    "fr": "Francés"
+  }
+}

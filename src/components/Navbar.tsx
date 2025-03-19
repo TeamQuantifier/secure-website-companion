@@ -2,10 +2,13 @@
 import { useState, useEffect } from 'react';
 import { Button } from "@/components/ui/button";
 import { Menu, X } from 'lucide-react';
+import { useTranslation } from 'react-i18next';
+import { LanguageSwitcher } from './LanguageSwitcher';
 
 export const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const { t } = useTranslation();
 
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -43,36 +46,40 @@ export const Navbar = () => {
         
         <nav className="hidden md:flex items-center space-x-8">
           <a href="#features" className="text-sm font-medium text-slate-700 hover:text-quantifier-purple transition-colors">
-            Features
+            {t('navbar.features')}
           </a>
           <a href="#how-it-works" className="text-sm font-medium text-slate-700 hover:text-quantifier-purple transition-colors">
-            How It Works
+            {t('navbar.howItWorks')}
           </a>
           <a href="#benefits" className="text-sm font-medium text-slate-700 hover:text-quantifier-purple transition-colors">
-            Benefits
+            {t('navbar.benefits')}
           </a>
           <a href="#why" className="text-sm font-medium text-slate-700 hover:text-quantifier-purple transition-colors">
-            Why Quantifier
+            {t('navbar.whyQuantifier')}
           </a>
           <a href="#contact" className="text-sm font-medium text-slate-700 hover:text-quantifier-purple transition-colors">
-            Contact Us
+            {t('navbar.contactUs')}
           </a>
         </nav>
         
-        <div className="hidden md:flex items-center space-x-4">
+        <div className="hidden md:flex items-center space-x-2">
+          <LanguageSwitcher />
           <Button 
             className="bg-gradient-to-r from-quantifier-purple to-quantifier-blue text-white transition-all shadow-sm hover:shadow-md"
           >
-            Book a Demo
+            {t('navbar.bookDemo')}
           </Button>
         </div>
         
-        <button 
-          className="md:hidden text-slate-700" 
-          onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-        >
-          {isMobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
-        </button>
+        <div className="md:hidden flex items-center space-x-2">
+          <LanguageSwitcher />
+          <button 
+            className="text-slate-700" 
+            onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+          >
+            {isMobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
+          </button>
+        </div>
       </div>
       
       {/* Mobile Menu */}
@@ -84,41 +91,41 @@ export const Navbar = () => {
               className="block py-2 text-sm font-medium text-slate-700 hover:text-quantifier-purple"
               onClick={() => setIsMobileMenuOpen(false)}
             >
-              Features
+              {t('navbar.features')}
             </a>
             <a 
               href="#how-it-works" 
               className="block py-2 text-sm font-medium text-slate-700 hover:text-quantifier-purple"
               onClick={() => setIsMobileMenuOpen(false)}
             >
-              How It Works
+              {t('navbar.howItWorks')}
             </a>
             <a 
               href="#benefits" 
               className="block py-2 text-sm font-medium text-slate-700 hover:text-quantifier-purple"
               onClick={() => setIsMobileMenuOpen(false)}
             >
-              Benefits
+              {t('navbar.benefits')}
             </a>
             <a 
               href="#why" 
               className="block py-2 text-sm font-medium text-slate-700 hover:text-quantifier-purple"
               onClick={() => setIsMobileMenuOpen(false)}
             >
-              Why Quantifier
+              {t('navbar.whyQuantifier')}
             </a>
             <a 
               href="#contact" 
               className="block py-2 text-sm font-medium text-slate-700 hover:text-quantifier-purple"
               onClick={() => setIsMobileMenuOpen(false)}
             >
-              Contact Us
+              {t('navbar.contactUs')}
             </a>
             <div className="pt-4 border-t border-slate-200 flex flex-col space-y-3">
               <Button 
                 className="bg-gradient-to-r from-quantifier-purple to-quantifier-blue text-white w-full justify-center"
               >
-                Book a Demo
+                {t('navbar.bookDemo')}
               </Button>
             </div>
           </div>

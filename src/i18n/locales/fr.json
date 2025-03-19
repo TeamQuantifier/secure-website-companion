@@ -1,0 +1,125 @@
+
+{
+  "navbar": {
+    "features": "Fonctionnalités",
+    "howItWorks": "Comment ça marche",
+    "benefits": "Avantages",
+    "whyQuantifier": "Pourquoi Quantifier",
+    "contactUs": "Contactez-nous",
+    "bookDemo": "Réserver une démo"
+  },
+  "hero": {
+    "aiPowered": "Conformité propulsée par l'IA",
+    "title": "Quantifier. L'Agent IA pour la Conformité.",
+    "subtitle": "Automatisé, Complet et Conçu pour la Confiance.",
+    "description": "Votre Agent IA comme bras droit pour la Conformité qui gère les projets, collecte des données à travers votre organisation et présente les résultats—automatisant significativement l'ensemble du processus de conformité.",
+    "bookDemo": "Réserver une démo",
+    "legalCompliance": "Conformité légale",
+    "aiAgent": "Agent IA",
+    "timeSaving": "Gain de temps",
+    "dashboard": "Tableau de bord de conformité",
+    "realtime": "Statut de conformité en temps réel",
+    "overview": "Aperçu",
+    "aiCollection": "Collecte IA",
+    "projectCompleteness": "Complétion du projet",
+    "dataCollectionStatus": "Statut de collecte des données",
+    "aiAgentCollecting": "L'agent IA collecte automatiquement les données de conformité",
+    "aiAgentActive": "Agent IA actif",
+    "department": "Département",
+    "status": "Statut",
+    "progress": "Progression",
+    "documents": "Documents",
+    "aiAgentCollectingData": "L'agent IA collecte des données à partir de 12 systèmes différents"
+  },
+  "stats": {
+    "companiesEvolving": "Les entreprises évoluent."
+  },
+  "steps": {
+    "title": "Conformité en 4 étapes",
+    "description": "Notre approche simplifiée pour rendre la conformité simple, efficace et fiable.",
+    "step1": {
+      "title": "Automatiser la conformité avec l'Agent IA de Quantifier",
+      "description": "Laissez notre IA gérer vos processus de conformité, de la collecte des données aux rapports."
+    },
+    "step2": {
+      "title": "Centraliser toutes les exigences réglementaires",
+      "description": "Gardez toutes vos exigences de conformité en un seul endroit accessible."
+    },
+    "step3": {
+      "title": "Suivre et rapporter avec un tableau de bord en temps réel",
+      "description": "Surveillez votre statut de conformité avec des visualisations et des rapports intuitifs."
+    },
+    "step4": {
+      "title": "Rester en avance avec des mises à jour continues de conformité",
+      "description": "Recevez des mises à jour automatiques lorsque les réglementations qui affectent votre entreprise changent."
+    }
+  },
+  "agentFlow": {
+    "aiAgentFlow": "Flux de l'Agent IA",
+    "complianceProjectStatus": "Conformité continue en pilote automatique avec l'Agent IA Quantifier",
+    "description": "Visualisation de la façon dont notre agent IA collecte des données de conformité à travers votre organisation et automatise l'ensemble du processus.",
+    "projectPhases": "Phases du projet",
+    "dataCollection": "Collecte de données",
+    "dataAnalysis": "Analyse des données",
+    "reportGeneration": "Génération de rapports",
+    "overallProjectCompletion": "Achèvement global du projet",
+    "organizationalDataCollection": "Collecte de données organisationnelles",
+    "department": "Département",
+    "aiAgentActive": "Agent IA actif",
+    "dataCollectionAutomation": "Automatisation de la collecte de données",
+    "aiAgentCollected": "L'agent IA a automatiquement collecté 84 documents à travers l'organisation, éliminant la collecte manuelle des données.",
+    "yourRightHand": "Votre Agent IA comme bras droit pour la Conformité",
+    "ourAiAgent": "Notre agent IA gère les projets, collecte des données à travers votre organisation et présente les résultats—automatisant significativement l'ensemble du processus de conformité.",
+    "crossOrganizational": "Inter-organisationnel"
+  },
+  "benefits": {
+    "title": "Avantages",
+    "whatYouGet": "Ce que vous obtenez",
+    "description": "Quantifier offre une solution complète de gestion de la conformité avec ces puissants avantages.",
+    "continuousCompliance": {
+      "title": "Conformité continue",
+      "description": "Plus de gestion de crise. Restez conforme en tout temps avec une surveillance proactive."
+    },
+    "aiPoweredRegulatory": {
+      "title": "Assistant réglementaire propulsé par l'IA",
+      "description": "Notre IA sait ce dont vous avez besoin avant vous, anticipant les exigences réglementaires."
+    },
+    "seamlessIntegrations": {
+      "title": "Intégrations transparentes",
+      "description": "Fonctionne avec vos systèmes existants ERP, RH, Excel et autres systèmes d'entreprise."
+    },
+    "automatedReports": {
+      "title": "Rapports automatisés",
+      "description": "Générez des rapports prêts à soumettre qui répondent aux exigences des auditeurs et des régulateurs."
+    },
+    "realTimeDashboard": {
+      "title": "Tableau de bord en temps réel",
+      "description": "Sachez toujours où vous en êtes avec des visualisations intuitives de votre statut de conformité."
+    }
+  },
+  "cta": {
+    "title": "Commencez votre parcours de conformité aujourd'hui",
+    "description": "Rejoignez les entreprises avant-gardistes qui utilisent Quantifier pour transformer leurs processus de conformité.",
+    "readyToTransform": "Prêt à transformer votre processus de conformité ?",
+    "scheduleDemo": "Planifiez une démo personnalisée pour voir comment notre assistant de conformité IA peut aider votre organisation.",
+    "bookDemo": "Réserver une démo"
+  },
+  "footer": {
+    "description": "Solutions de conformité propulsées par l'IA qui aident les entreprises à naviguer facilement dans des paysages réglementaires complexes.",
+    "contact": "Contact",
+    "address": "447 Sutter St Ste 405 PMB 137, San Francisco, CA 94108",
+    "rights": "Tous droits réservés.",
+    "privacyPolicy": "Politique de confidentialité",
+    "termsOfService": "Conditions d'utilisation",
+    "cookies": "Cookies"
+  },
+  "language": {
+    "en": "Anglais",
+    "de": "Allemand",
+    "es": "Espagnol",
+    "pl": "Polonais",
+    "ro": "Roumain",
+    "cz": "Tchèque",
+    "fr": "Français"
+  }
+}

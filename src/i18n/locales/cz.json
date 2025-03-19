@@ -1,0 +1,125 @@
+
+{
+  "navbar": {
+    "features": "Funkce",
+    "howItWorks": "Jak to funguje",
+    "benefits": "Výhody",
+    "whyQuantifier": "Proč Quantifier",
+    "contactUs": "Kontaktujte nás",
+    "bookDemo": "Rezervovat demo"
+  },
+  "hero": {
+    "aiPowered": "Dodržování předpisů s podporou AI",
+    "title": "Quantifier. AI Agent pro dodržování předpisů.",
+    "subtitle": "Automatizované, komplexní a vytvořené pro důvěru.",
+    "description": "Váš AI Agent jako pravá ruka pro dodržování předpisů, který spravuje projekty, sbírá data napříč vaší organizací a prezentuje výsledky—významně automatizuje celý proces dodržování předpisů.",
+    "bookDemo": "Rezervovat demo",
+    "legalCompliance": "Právní soulad",
+    "aiAgent": "AI Agent",
+    "timeSaving": "Úspora času",
+    "dashboard": "Dashboard dodržování předpisů",
+    "realtime": "Stav dodržování předpisů v reálném čase",
+    "overview": "Přehled",
+    "aiCollection": "AI sběr",
+    "projectCompleteness": "Úplnost projektu",
+    "dataCollectionStatus": "Stav sběru dat",
+    "aiAgentCollecting": "AI agent automaticky sbírá data o dodržování předpisů",
+    "aiAgentActive": "AI Agent aktivní",
+    "department": "Oddělení",
+    "status": "Stav",
+    "progress": "Pokrok",
+    "documents": "Dokumenty",
+    "aiAgentCollectingData": "AI agent sbírá data z 12 různých systémů"
+  },
+  "stats": {
+    "companiesEvolving": "Společnosti se vyvíjejí."
+  },
+  "steps": {
+    "title": "Dodržování předpisů ve 4 krocích",
+    "description": "Náš optimalizovaný přístup k tomu, aby bylo dodržování předpisů jednoduché, efektivní a spolehlivé.",
+    "step1": {
+      "title": "Automatizujte dodržování předpisů s AI Agentem Quantifier",
+      "description": "Nechte naši AI zpracovat vaše procesy dodržování předpisů od sběru dat až po reportování."
+    },
+    "step2": {
+      "title": "Centralizujte všechny regulační požadavky",
+      "description": "Udržujte všechny požadavky na dodržování předpisů na jednom přístupném místě."
+    },
+    "step3": {
+      "title": "Sledujte a reportujte s dashboardem v reálném čase",
+      "description": "Monitorujte svůj stav dodržování předpisů s intuitivními vizualizacemi a reporty."
+    },
+    "step4": {
+      "title": "Zůstaňte napřed s průběžnými aktualizacemi dodržování předpisů",
+      "description": "Získávejte automatické aktualizace, když se změní předpisy, které ovlivňují vaše podnikání."
+    }
+  },
+  "agentFlow": {
+    "aiAgentFlow": "AI Agent Flow",
+    "complianceProjectStatus": "Kontinuální dodržování předpisů na autopilotu s AI Agentem Quantifier",
+    "description": "Vizualizace toho, jak náš AI agent sbírá data o dodržování předpisů v celé vaší organizaci a automatizuje celý proces.",
+    "projectPhases": "Fáze projektu",
+    "dataCollection": "Sběr dat",
+    "dataAnalysis": "Analýza dat",
+    "reportGeneration": "Generování reportů",
+    "overallProjectCompletion": "Celkové dokončení projektu",
+    "organizationalDataCollection": "Sběr organizačních dat",
+    "department": "Oddělení",
+    "aiAgentActive": "AI Agent aktivní",
+    "dataCollectionAutomation": "Automatizace sběru dat",
+    "aiAgentCollected": "AI agent automaticky shromáždil 84 dokumentů z celé organizace, což eliminuje ruční sběr dat.",
+    "yourRightHand": "Váš AI Agent jako pravá ruka pro dodržování předpisů",
+    "ourAiAgent": "Náš AI agent spravuje projekty, sbírá data napříč vaší organizací a prezentuje výsledky—významně automatizuje celý proces dodržování předpisů.",
+    "crossOrganizational": "Napříč organizací"
+  },
+  "benefits": {
+    "title": "Výhody",
+    "whatYouGet": "Co získáte",
+    "description": "Quantifier poskytuje kompletní řešení pro správu dodržování předpisů s těmito výkonnými výhodami.",
+    "continuousCompliance": {
+      "title": "Kontinuální dodržování předpisů",
+      "description": "Už žádné hašení požárů. Zůstaňte v souladu s předpisy po celou dobu díky proaktivnímu monitorování."
+    },
+    "aiPoweredRegulatory": {
+      "title": "Regulační asistent s podporou AI",
+      "description": "Naše AI ví, co potřebujete, ještě před vámi, a předvídá regulační požadavky."
+    },
+    "seamlessIntegrations": {
+      "title": "Bezproblémové integrace",
+      "description": "Funguje s vašimi stávajícími systémy ERP, HR, Excel a dalšími podnikovými systémy."
+    },
+    "automatedReports": {
+      "title": "Automatizované reporty",
+      "description": "Generujte reporty připravené k odeslání, které splňují požadavky auditorů a regulačních orgánů."
+    },
+    "realTimeDashboard": {
+      "title": "Dashboard v reálném čase",
+      "description": "Vždy víte, kde se nacházíte, díky intuitivním vizualizacím vašeho stavu dodržování předpisů."
+    }
+  },
+  "cta": {
+    "title": "Začněte svou cestu dodržování předpisů ještě dnes",
+    "description": "Připojte se k progresivním společnostem používajícím Quantifier k transformaci procesů dodržování předpisů.",
+    "readyToTransform": "Jste připraveni transformovat váš proces dodržování předpisů?",
+    "scheduleDemo": "Naplánujte si personalizované demo, abyste viděli, jak může náš AI asistent pro dodržování předpisů pomoci vaší organizaci.",
+    "bookDemo": "Rezervovat demo"
+  },
+  "footer": {
+    "description": "Řešení pro dodržování předpisů s podporou AI, která pomáhají firmám snadno navigovat složitými regulačními prostředími.",
+    "contact": "Kontakt",
+    "address": "447 Sutter St Ste 405 PMB 137, San Francisco, CA 94108",
+    "rights": "Všechna práva vyhrazena.",
+    "privacyPolicy": "Zásady ochrany osobních údajů",
+    "termsOfService": "Podmínky služby",
+    "cookies": "Cookies"
+  },
+  "language": {
+    "en": "Angličtina",
+    "de": "Němčina",
+    "es": "Španělština",
+    "pl": "Polština",
+    "ro": "Rumunština",
+    "cz": "Čeština",
+    "fr": "Francouzština"
+  }
+}

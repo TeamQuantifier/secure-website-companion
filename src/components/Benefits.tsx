@@ -1,41 +1,10 @@
 
 import { useState, useEffect, useRef } from 'react';
 import { CheckCircle2, Bot, ArrowDownUp, FileCheck, BarChart2 } from 'lucide-react';
-
-const benefits = [
-  {
-    title: "Continuous Compliance",
-    description: "No more firefighting. Stay compliant at all times with proactive monitoring.",
-    icon: CheckCircle2,
-    delay: 100
-  },
-  {
-    title: "AI-Powered Regulatory Assistant",
-    description: "Our AI knows what you need before you do, anticipating regulatory requirements.",
-    icon: Bot,
-    delay: 200
-  },
-  {
-    title: "Seamless Integrations",
-    description: "Works with your existing ERP, HR, Excel and other business systems.",
-    icon: ArrowDownUp,
-    delay: 300
-  },
-  {
-    title: "Automated Reports",
-    description: "Generate ready-to-submit reports that meet auditor's & regulatory requirements.",
-    icon: FileCheck,
-    delay: 400
-  },
-  {
-    title: "Real-Time Dashboard",
-    description: "Always know where you stand with intuitive visualizations of your compliance status.",
-    icon: BarChart2,
-    delay: 500
-  }
-];
+import { useTranslation } from 'react-i18next';
 
 export const Benefits = () => {
+  const { t } = useTranslation();
   const [isInView, setIsInView] = useState(false);
   const sectionRef = useRef<HTMLElement>(null);
 
@@ -57,6 +26,39 @@ export const Benefits = () => {
     return () => observer.disconnect();
   }, []);
 
+  const benefits = [
+    {
+      title: t('benefits.continuousCompliance.title'),
+      description: t('benefits.continuousCompliance.description'),
+      icon: CheckCircle2,
+      delay: 100
+    },
+    {
+      title: t('benefits.aiPoweredRegulatory.title'),
+      description: t('benefits.aiPoweredRegulatory.description'),
+      icon: Bot,
+      delay: 200
+    },
+    {
+      title: t('benefits.seamlessIntegrations.title'),
+      description: t('benefits.seamlessIntegrations.description'),
+      icon: ArrowDownUp,
+      delay: 300
+    },
+    {
+      title: t('benefits.automatedReports.title'),
+      description: t('benefits.automatedReports.description'),
+      icon: FileCheck,
+      delay: 400
+    },
+    {
+      title: t('benefits.realTimeDashboard.title'),
+      description: t('benefits.realTimeDashboard.description'),
+      icon: BarChart2,
+      delay: 500
+    }
+  ];
+
   return (
     <section 
       id="benefits" 
@@ -69,15 +71,15 @@ export const Benefits = () => {
         <div className="text-center max-w-3xl mx-auto mb-16">
           <div className="inline-flex items-center px-3 py-1 rounded-full bg-quantifier-purple/10 border border-quantifier-purple/20 text-quantifier-purple text-xs font-medium mb-6">
             <CheckCircle2 className="mr-2 h-3.5 w-3.5" />
-            Benefits
+            {t('benefits.title')}
           </div>
           
           <h2 className={`text-3xl md:text-4xl font-bold text-slate-800 mb-6 ${isInView ? 'animate-slide-up' : 'opacity-0'}`}>
-            What You Get
+            {t('benefits.whatYouGet')}
           </h2>
           
           <p className={`text-lg text-slate-600 max-w-2xl mx-auto ${isInView ? 'animate-slide-up animate-delay-100' : 'opacity-0'}`}>
-            Quantifier delivers a complete compliance management solution with these powerful benefits.
+            {t('benefits.description')}
           </p>
         </div>
         

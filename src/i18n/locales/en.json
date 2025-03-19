@@ -1,0 +1,125 @@
+
+{
+  "navbar": {
+    "features": "Features",
+    "howItWorks": "How It Works",
+    "benefits": "Benefits",
+    "whyQuantifier": "Why Quantifier",
+    "contactUs": "Contact Us",
+    "bookDemo": "Book a Demo"
+  },
+  "hero": {
+    "aiPowered": "AI-Powered Compliance",
+    "title": "Quantifier. The AI Agent for Compliance.",
+    "subtitle": "Automated, Comprehensive, and Built for Confidence.",
+    "description": "Your right hand AI Agent Compliance Officer that manages projects, collects data across your organization, and showcases results—significantly automating the entire compliance process.",
+    "bookDemo": "Book a Demo",
+    "legalCompliance": "Legal Compliance",
+    "aiAgent": "AI Agent",
+    "timeSaving": "Time-Saving",
+    "dashboard": "Compliance Dashboard",
+    "realtime": "Real-time compliance status",
+    "overview": "Overview",
+    "aiCollection": "AI Collection",
+    "projectCompleteness": "Project Completeness",
+    "dataCollectionStatus": "Data Collection Status",
+    "aiAgentCollecting": "AI agent automatically collecting compliance data",
+    "aiAgentActive": "AI Agent Active",
+    "department": "Department",
+    "status": "Status",
+    "progress": "Progress",
+    "documents": "Documents",
+    "aiAgentCollectingData": "AI agent is collecting data from 12 different systems"
+  },
+  "stats": {
+    "companiesEvolving": "Companies are evolving."
+  },
+  "steps": {
+    "title": "Compliance in 4 Steps",
+    "description": "Our streamlined approach to making compliance simple, efficient, and reliable.",
+    "step1": {
+      "title": "Automate compliance with Quantifier's AI Agent",
+      "description": "Let our AI handle your compliance processes from data collection to reporting."
+    },
+    "step2": {
+      "title": "Centralize all regulatory requirements",
+      "description": "Keep all your compliance requirements in one accessible location."
+    },
+    "step3": {
+      "title": "Track & Report with a real-time dashboard",
+      "description": "Monitor your compliance status with intuitive visualizations and reports."
+    },
+    "step4": {
+      "title": "Stay Ahead with continuous compliance updates",
+      "description": "Receive automated updates when regulations change that affect your business."
+    }
+  },
+  "agentFlow": {
+    "aiAgentFlow": "AI Agent Flow",
+    "complianceProjectStatus": "Continuous Compliance on Autopilot with The Quantifier AI Agent",
+    "description": "Visualizing how our AI agent collects compliance data across your organization and automates the entire process.",
+    "projectPhases": "Project Phases",
+    "dataCollection": "Data Collection",
+    "dataAnalysis": "Data Analysis",
+    "reportGeneration": "Report Generation",
+    "overallProjectCompletion": "Overall Project Completion",
+    "organizationalDataCollection": "Organizational Data Collection",
+    "department": "Department",
+    "aiAgentActive": "AI Agent Active",
+    "dataCollectionAutomation": "Data Collection Automation",
+    "aiAgentCollected": "The AI agent has automatically collected 84 documents from across the organization, eliminating manual data gathering.",
+    "yourRightHand": "Your right hand AI Agent Compliance Officer",
+    "ourAiAgent": "Our AI agent manages projects, collects data across your organization, and showcases results—significantly automating the entire compliance process.",
+    "crossOrganizational": "Cross-Organizational"
+  },
+  "benefits": {
+    "title": "Benefits",
+    "whatYouGet": "What You Get",
+    "description": "Quantifier delivers a complete compliance management solution with these powerful benefits.",
+    "continuousCompliance": {
+      "title": "Continuous Compliance",
+      "description": "No more firefighting. Stay compliant at all times with proactive monitoring."
+    },
+    "aiPoweredRegulatory": {
+      "title": "AI-Powered Regulatory Assistant",
+      "description": "Our AI knows what you need before you do, anticipating regulatory requirements."
+    },
+    "seamlessIntegrations": {
+      "title": "Seamless Integrations",
+      "description": "Works with your existing ERP, HR, Excel and other business systems."
+    },
+    "automatedReports": {
+      "title": "Automated Reports",
+      "description": "Generate ready-to-submit reports that meet auditor's & regulatory requirements."
+    },
+    "realTimeDashboard": {
+      "title": "Real-Time Dashboard",
+      "description": "Always know where you stand with intuitive visualizations of your compliance status."
+    }
+  },
+  "cta": {
+    "title": "Start Your Compliance Journey Today",
+    "description": "Join forward-thinking companies using Quantifier to transform their compliance processes.",
+    "readyToTransform": "Ready to Transform Your Compliance Process?",
+    "scheduleDemo": "Schedule a personalized demo to see how our AI compliance assistant can help your organization.",
+    "bookDemo": "Book a Demo"
+  },
+  "footer": {
+    "description": "AI-powered compliance solutions that help businesses navigate complex regulatory landscapes with ease.",
+    "contact": "Contact",
+    "address": "447 Sutter St Ste 405 PMB 137, San Francisco, CA 94108",
+    "rights": "All rights reserved.",
+    "privacyPolicy": "Privacy Policy",
+    "termsOfService": "Terms of Service",
+    "cookies": "Cookies"
+  },
+  "language": {
+    "en": "English",
+    "de": "German",
+    "es": "Spanish",
+    "pl": "Polish",
+    "ro": "Romanian",
+    "cz": "Czech",
+    "fr": "French"
+  }
+}

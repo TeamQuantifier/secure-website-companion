@@ -1,0 +1,125 @@
+
+{
+  "navbar": {
+    "features": "Funkcje",
+    "howItWorks": "Jak to działa",
+    "benefits": "Korzyści",
+    "whyQuantifier": "Dlaczego Quantifier",
+    "contactUs": "Kontakt",
+    "bookDemo": "Umów demo"
+  },
+  "hero": {
+    "aiPowered": "Zgodność wspierana przez AI",
+    "title": "Quantifier. Agent AI dla zgodności.",
+    "subtitle": "Zautomatyzowany, kompleksowy i stworzony dla pewności.",
+    "description": "Twój Agent AI jako prawa ręka Oficera Zgodności, który zarządza projektami, zbiera dane w całej organizacji i prezentuje wyniki - znacznie automatyzując cały proces zgodności.",
+    "bookDemo": "Umów demo",
+    "legalCompliance": "Zgodność prawna",
+    "aiAgent": "Agent AI",
+    "timeSaving": "Oszczędność czasu",
+    "dashboard": "Pulpit zgodności",
+    "realtime": "Status zgodności w czasie rzeczywistym",
+    "overview": "Przegląd",
+    "aiCollection": "Zbieranie AI",
+    "projectCompleteness": "Kompletność projektu",
+    "dataCollectionStatus": "Status zbierania danych",
+    "aiAgentCollecting": "Agent AI automatycznie zbiera dane zgodności",
+    "aiAgentActive": "Agent AI aktywny",
+    "department": "Dział",
+    "status": "Status",
+    "progress": "Postęp",
+    "documents": "Dokumenty",
+    "aiAgentCollectingData": "Agent AI zbiera dane z 12 różnych systemów"
+  },
+  "stats": {
+    "companiesEvolving": "Firmy ewoluują."
+  },
+  "steps": {
+    "title": "Zgodność w 4 krokach",
+    "description": "Nasze usprawnione podejście, by uczynić zgodność prostą, wydajną i niezawodną.",
+    "step1": {
+      "title": "Zautomatyzuj zgodność z Agentem AI Quantifier",
+      "description": "Pozwól naszej AI obsłużyć procesy zgodności od zbierania danych po raportowanie."
+    },
+    "step2": {
+      "title": "Scentralizuj wszystkie wymogi regulacyjne",
+      "description": "Przechowuj wszystkie wymogi zgodności w jednym dostępnym miejscu."
+    },
+    "step3": {
+      "title": "Śledź i raportuj z pulpitem w czasie rzeczywistym",
+      "description": "Monitoruj swój status zgodności z intuicyjnymi wizualizacjami i raportami."
+    },
+    "step4": {
+      "title": "Wyprzedzaj z ciągłymi aktualizacjami zgodności",
+      "description": "Otrzymuj automatyczne aktualizacje, gdy zmieniają się przepisy wpływające na Twój biznes."
+    }
+  },
+  "agentFlow": {
+    "aiAgentFlow": "Przepływ Agenta AI",
+    "complianceProjectStatus": "Ciągła zgodność na autopilocie z Agentem AI Quantifier",
+    "description": "Wizualizacja, jak nasz Agent AI zbiera dane zgodności w całej Twojej organizacji i automatyzuje cały proces.",
+    "projectPhases": "Fazy projektu",
+    "dataCollection": "Zbieranie danych",
+    "dataAnalysis": "Analiza danych",
+    "reportGeneration": "Generowanie raportów",
+    "overallProjectCompletion": "Ogólne ukończenie projektu",
+    "organizationalDataCollection": "Zbieranie danych organizacyjnych",
+    "department": "Dział",
+    "aiAgentActive": "Agent AI aktywny",
+    "dataCollectionAutomation": "Automatyzacja zbierania danych",
+    "aiAgentCollected": "Agent AI automatycznie zebrał 84 dokumenty z całej organizacji, eliminując ręczne zbieranie danych.",
+    "yourRightHand": "Twój Agent AI jako prawa ręka Oficera Zgodności",
+    "ourAiAgent": "Nasz Agent AI zarządza projektami, zbiera dane w całej Twojej organizacji i prezentuje wyniki - znacznie automatyzując cały proces zgodności.",
+    "crossOrganizational": "Międzyorganizacyjny"
+  },
+  "benefits": {
+    "title": "Korzyści",
+    "whatYouGet": "Co otrzymujesz",
+    "description": "Quantifier dostarcza kompletne rozwiązanie do zarządzania zgodnością z tymi potężnymi korzyściami.",
+    "continuousCompliance": {
+      "title": "Ciągła zgodność",
+      "description": "Koniec z gaszeniem pożarów. Bądź zgodny przez cały czas dzięki proaktywnemu monitorowaniu."
+    },
+    "aiPoweredRegulatory": {
+      "title": "Asystent regulacyjny wspomagany przez AI",
+      "description": "Nasza AI wie, czego potrzebujesz, zanim Ty to wiesz, przewidując wymogi regulacyjne."
+    },
+    "seamlessIntegrations": {
+      "title": "Bezproblemowe integracje",
+      "description": "Działa z istniejącymi systemami ERP, HR, Excel i innymi systemami biznesowymi."
+    },
+    "automatedReports": {
+      "title": "Zautomatyzowane raporty",
+      "description": "Generuj gotowe do złożenia raporty, które spełniają wymogi audytorów i regulatorów."
+    },
+    "realTimeDashboard": {
+      "title": "Pulpit w czasie rzeczywistym",
+      "description": "Zawsze wiedz, na czym stoisz, dzięki intuicyjnym wizualizacjom statusu zgodności."
+    }
+  },
+  "cta": {
+    "title": "Rozpocznij swoją podróż zgodności już dziś",
+    "description": "Dołącz do postępowych firm korzystających z Quantifier, aby przekształcić swoje procesy zgodności.",
+    "readyToTransform": "Gotowy do przekształcenia procesu zgodności?",
+    "scheduleDemo": "Zaplanuj spersonalizowane demo, aby zobaczyć, jak nasz asystent zgodności AI może pomóc Twojej organizacji.",
+    "bookDemo": "Umów demo"
+  },
+  "footer": {
+    "description": "Rozwiązania zgodności wspierane przez AI, które pomagają firmom poruszać się po złożonych krajobrazach regulacyjnych z łatwością.",
+    "contact": "Kontakt",
+    "address": "447 Sutter St Ste 405 PMB 137, San Francisco, CA 94108",
+    "rights": "Wszelkie prawa zastrzeżone.",
+    "privacyPolicy": "Polityka prywatności",
+    "termsOfService": "Warunki korzystania",
+    "cookies": "Pliki cookie"
+  },
+  "language": {
+    "en": "Angielski",
+    "de": "Niemiecki",
+    "es": "Hiszpański",
+    "pl": "Polski",
+    "ro": "Rumuński",
+    "cz": "Czeski",
+    "fr": "Francuski"
+  }
+}

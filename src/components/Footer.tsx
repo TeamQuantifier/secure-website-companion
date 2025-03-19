@@ -1,7 +1,11 @@
 
 import { Mail, Phone, MapPin, Twitter, Linkedin, Github } from 'lucide-react';
+import { useTranslation } from 'react-i18next';
 
 export const Footer = () => {
+  const { t } = useTranslation();
+  const currentYear = new Date().getFullYear();
+
   return (
     <footer className="bg-white border-t border-slate-200">
       <div className="max-w-7xl mx-auto py-12 px-6 lg:px-8">
@@ -18,7 +22,7 @@ export const Footer = () => {
               </span>
             </div>
             <p className="text-slate-500 mb-4 max-w-xs">
-              AI-powered compliance solutions that help businesses navigate complex regulatory landscapes with ease.
+              {t('footer.description')}
             </p>
             <div className="flex space-x-4">
               <a href="#" className="text-slate-400 hover:text-compliance-600 transition-colors">
@@ -37,7 +41,7 @@ export const Footer = () => {
           </div>
           
           <div>
-            <h3 className="font-semibold text-slate-800 mb-4">Contact</h3>
+            <h3 className="font-semibold text-slate-800 mb-4">{t('footer.contact')}</h3>
             <ul className="space-y-3">
               <li className="flex items-start">
                 <Mail className="h-5 w-5 text-compliance-500 mr-2 flex-shrink-0 mt-0.5" />
@@ -50,8 +54,7 @@ export const Footer = () => {
               <li className="flex items-start">
                 <MapPin className="h-5 w-5 text-compliance-500 mr-2 flex-shrink-0 mt-0.5" />
                 <span className="text-slate-500">
-                  447 Sutter St Ste 405 PMB 137<br />
-                  San Francisco, CA 94108
+                  {t('footer.address')}
                 </span>
               </li>
             </ul>
@@ -60,18 +63,18 @@ export const Footer = () => {
         
         <div className="pt-8 mt-8 border-t border-slate-200 flex flex-col md:flex-row justify-between items-center">
           <p className="text-slate-500 text-sm">
-            &copy; {new Date().getFullYear()} Quantifier. All rights reserved.
+            &copy; {currentYear} Quantifier. {t('footer.rights')}
           </p>
           
           <div className="flex space-x-6 mt-4 md:mt-0">
             <a href="#" className="text-slate-500 hover:text-compliance-600 transition-colors text-sm">
-              Privacy Policy
+              {t('footer.privacyPolicy')}
             </a>
             <a href="#" className="text-slate-500 hover:text-compliance-600 transition-colors text-sm">
-              Terms of Service
+              {t('footer.termsOfService')}
             </a>
             <a href="#" className="text-slate-500 hover:text-compliance-600 transition-colors text-sm">
-              Cookies
+              {t('footer.cookies')}
             </a>
           </div>
         </div>

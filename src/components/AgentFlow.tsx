@@ -4,8 +4,10 @@ import { ChartContainer } from "@/components/ui/chart";
 import { Card, CardContent } from "@/components/ui/card";
 import { Progress } from "@/components/ui/progress";
 import { Bot, Database, FileCheck, Users, Building, CheckCircle, Clock, AlertCircle } from 'lucide-react';
+import { useTranslation } from 'react-i18next';
 
 export const AgentFlow = () => {
+  const { t } = useTranslation();
   const [isInView, setIsInView] = useState(false);
   const sectionRef = useRef<HTMLElement>(null);
 
@@ -38,21 +40,21 @@ export const AgentFlow = () => {
   // Project phases status
   const projectPhases = [
     { 
-      name: 'Data Collection', 
+      name: t('agentFlow.dataCollection'), 
       status: 'Completed', 
       description: 'AI agent systematically collected data across departments',
       icon: Database,
       statusIcon: CheckCircle
     },
     { 
-      name: 'Data Analysis', 
+      name: t('agentFlow.dataAnalysis'), 
       status: 'In Progress', 
       description: 'Analyzing compliance requirements against collected data',
       icon: Bot,
       statusIcon: Clock
     },
     { 
-      name: 'Report Generation', 
+      name: t('agentFlow.reportGeneration'), 
       status: 'Not Started', 
       description: 'Creating comprehensive compliance reports',
       icon: FileCheck,
@@ -94,15 +96,15 @@ export const AgentFlow = () => {
         <div className="text-center mb-16">
           <div className="inline-flex items-center px-3 py-1 rounded-full bg-quantifier-purple/10 border border-quantifier-purple/20 text-quantifier-purple text-xs font-medium mb-6">
             <Bot className="mr-2 h-3.5 w-3.5" />
-            AI Agent Flow
+            {t('agentFlow.aiAgentFlow')}
           </div>
           
           <h2 className={`text-3xl md:text-4xl font-bold text-slate-800 mb-6 ${isInView ? 'animate-slide-up' : 'opacity-0'}`}>
-            Compliance Project Status
+            {t('agentFlow.complianceProjectStatus')}
           </h2>
           
           <p className={`text-lg text-slate-600 max-w-2xl mx-auto ${isInView ? 'animate-slide-up animate-delay-100' : 'opacity-0'}`}>
-            Visualizing how our AI agent collects compliance data across your organization and automates the entire process.
+            {t('agentFlow.description')}
           </p>
         </div>
         
@@ -111,7 +113,7 @@ export const AgentFlow = () => {
             <div className="grid lg:grid-cols-2 divide-y lg:divide-y-0 lg:divide-x divide-slate-200">
               {/* Project Phase Timeline */}
               <div className="p-8">
-                <h3 className="text-lg font-semibold mb-8 text-slate-800">Project Phases</h3>
+                <h3 className="text-lg font-semibold mb-8 text-slate-800">{t('agentFlow.projectPhases')}</h3>
                 
                 <div className="relative pl-8 space-y-12 before:absolute before:inset-y-0 before:left-3 before:w-0.5 before:bg-gradient-to-b before:from-quantifier-purple before:via-quantifier-blue before:to-slate-200">
                   {projectPhases.map((phase, index) => (
@@ -146,7 +148,7 @@ export const AgentFlow = () => {
                 
                 <div className="mt-10 pt-6 border-t border-slate-200">
                   <div className="flex items-center justify-between mb-3">
-                    <h4 className="font-medium text-slate-800">Overall Project Completion</h4>
+                    <h4 className="font-medium text-slate-800">{t('agentFlow.overallProjectCompletion')}</h4>
                     <span className="font-medium text-quantifier-purple">55%</span>
                   </div>
                   <Progress value={55} className="h-2" />
@@ -156,10 +158,10 @@ export const AgentFlow = () => {
               {/* Departmental Data Collection */}
               <div className="p-8">
                 <div className="flex items-center justify-between mb-8">
-                  <h3 className="text-lg font-semibold text-slate-800">Organizational Data Collection</h3>
+                  <h3 className="text-lg font-semibold text-slate-800">{t('agentFlow.organizationalDataCollection')}</h3>
                   <div className="inline-flex items-center gap-1.5 px-2 py-1 rounded-full bg-quantifier-purple/10 text-quantifier-purple text-xs font-medium">
                     <Bot className="h-3.5 w-3.5" />
-                    <span>AI Agent Active</span>
+                    <span>{t('agentFlow.aiAgentActive')}</span>
                   </div>
                 </div>
                 
@@ -173,14 +175,14 @@ export const AgentFlow = () => {
                           </div>
                           
                           <div>
-                            <h4 className="font-medium text-slate-800">{dept.name} Department</h4>
+                            <h4 className="font-medium text-slate-800">{dept.name} {t('agentFlow.department')}</h4>
                             <div className="flex items-center gap-1 text-sm">
                               <span className={`inline-flex items-center px-2 py-0.5 rounded-full text-xs font-medium ${getStatusBg(dept.status)}`}>
                                 {dept.status}
                               </span>
                               {dept.documents > 0 && (
                                 <span className="text-xs text-slate-600">
-                                  {dept.documents} documents
+                                  {dept.documents} {t('hero.documents')}
                                 </span>
                               )}
                             </div>
@@ -202,13 +204,13 @@ export const AgentFlow = () => {
                 </div>
                 
                 <div className="mt-10 p-4 rounded-lg bg-slate-50 border border-slate-200/80">
-                  <h4 className="font-medium text-slate-800 mb-3">Data Collection Automation</h4>
+                  <h4 className="font-medium text-slate-800 mb-3">{t('agentFlow.dataCollectionAutomation')}</h4>
                   <div className="flex items-center gap-3">
                     <div className="h-10 w-10 rounded-lg bg-quantifier-purple/10 text-quantifier-purple border border-quantifier-purple/20 flex items-center justify-center">
                       <Database className="h-5 w-5" />
                     </div>
                     <p className="text-sm text-slate-700">
-                      The AI agent has <span className="font-medium">automatically collected 84 documents</span> from across the organization, eliminating manual data gathering.
+                      {t('agentFlow.aiAgentCollected')}
                     </p>
                   </div>
                 </div>
@@ -221,34 +223,33 @@ export const AgentFlow = () => {
           <div className="text-center max-w-3xl mx-auto">
             <h3 className="text-2xl font-bold mb-4">
               <span className="underline decoration-2 decoration-white/70">
-                Your right hand AI Agent Compliance Officer
+                {t('agentFlow.yourRightHand')}
               </span>
             </h3>
             
             <p className="text-white/90 mb-6">
-              Our AI agent manages projects, collects data across your organization, and 
-              showcases results—significantly automating the entire compliance process.
+              {t('agentFlow.ourAiAgent')}
             </p>
             
             <div className="flex flex-wrap justify-center gap-4">
               <div className="bg-white/10 backdrop-blur-sm px-4 py-2 rounded-lg border border-white/20 flex items-center gap-2">
                 <Database className="h-4 w-4" />
-                <span className="text-sm font-medium">Data Collection</span>
+                <span className="text-sm font-medium">{t('agentFlow.dataCollection')}</span>
               </div>
               
               <div className="bg-white/10 backdrop-blur-sm px-4 py-2 rounded-lg border border-white/20 flex items-center gap-2">
                 <FileCheck className="h-4 w-4" />
-                <span className="text-sm font-medium">Project Management</span>
+                <span className="text-sm font-medium">{t('steps.step3.title')}</span>
               </div>
               
               <div className="bg-white/10 backdrop-blur-sm px-4 py-2 rounded-lg border border-white/20 flex items-center gap-2">
                 <Bot className="h-4 w-4" />
-                <span className="text-sm font-medium">AI Automation</span>
+                <span className="text-sm font-medium">{t('hero.aiAgent')}</span>
               </div>
               
               <div className="bg-white/10 backdrop-blur-sm px-4 py-2 rounded-lg border border-white/20 flex items-center gap-2">
                 <Users className="h-4 w-4" />
-                <span className="text-sm font-medium">Cross-Organizational</span>
+                <span className="text-sm font-medium">{t('agentFlow.crossOrganizational')}</span>
               </div>
             </div>
           </div>

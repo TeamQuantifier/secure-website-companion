@@ -1,39 +1,10 @@
 
 import { useState, useEffect, useRef } from 'react';
 import { Bot, Database, BarChart, Bell } from 'lucide-react';
-
-const steps = [
-  {
-    number: "1️⃣",
-    title: "Automate compliance with Quantifier's AI Agent",
-    description: "Let our AI handle your compliance processes from data collection to reporting.",
-    icon: Bot,
-    delay: 100,
-  },
-  {
-    number: "2️⃣",
-    title: "Centralize all regulatory requirements",
-    description: "Keep all your compliance requirements in one accessible location.",
-    icon: Database,
-    delay: 200,
-  },
-  {
-    number: "3️⃣",
-    title: "Track & Report with a real-time dashboard",
-    description: "Monitor your compliance status with intuitive visualizations and reports.",
-    icon: BarChart,
-    delay: 300,
-  },
-  {
-    number: "4️⃣",
-    title: "Stay Ahead with continuous compliance updates",
-    description: "Receive automated updates when regulations change that affect your business.",
-    icon: Bell,
-    delay: 400,
-  }
-];
+import { useTranslation } from 'react-i18next';
 
 export const Steps = () => {
+  const { t } = useTranslation();
   const [isInView, setIsInView] = useState(false);
   const sectionRef = useRef<HTMLElement>(null);
 
@@ -55,6 +26,37 @@ export const Steps = () => {
     return () => observer.disconnect();
   }, []);
 
+  const steps = [
+    {
+      number: "1️⃣",
+      title: t('steps.step1.title'),
+      description: t('steps.step1.description'),
+      icon: Bot,
+      delay: 100,
+    },
+    {
+      number: "2️⃣",
+      title: t('steps.step2.title'),
+      description: t('steps.step2.description'),
+      icon: Database,
+      delay: 200,
+    },
+    {
+      number: "3️⃣",
+      title: t('steps.step3.title'),
+      description: t('steps.step3.description'),
+      icon: BarChart,
+      delay: 300,
+    },
+    {
+      number: "4️⃣",
+      title: t('steps.step4.title'),
+      description: t('steps.step4.description'),
+      icon: Bell,
+      delay: 400,
+    }
+  ];
+
   return (
     <section 
       id="how-it-works" 
@@ -70,11 +72,11 @@ export const Steps = () => {
       <div className="relative z-10 max-w-7xl mx-auto px-6 lg:px-8">
         <div className="text-center max-w-3xl mx-auto mb-16">          
           <h2 className={`text-3xl md:text-4xl font-bold text-slate-800 mb-6 ${isInView ? 'animate-slide-up' : 'opacity-0'}`}>
-            Compliance in 4 Steps
+            {t('steps.title')}
           </h2>
           
           <p className={`text-lg text-slate-600 max-w-2xl mx-auto ${isInView ? 'animate-slide-up animate-delay-100' : 'opacity-0'}`}>
-            Our streamlined approach to making compliance simple, efficient, and reliable.
+            {t('steps.description')}
           </p>
         </div>
         

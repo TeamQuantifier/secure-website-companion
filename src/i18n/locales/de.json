@@ -1,0 +1,125 @@
+
+{
+  "navbar": {
+    "features": "Funktionen",
+    "howItWorks": "Wie es funktioniert",
+    "benefits": "Vorteile",
+    "whyQuantifier": "Warum Quantifier",
+    "contactUs": "Kontakt",
+    "bookDemo": "Demo buchen"
+  },
+  "hero": {
+    "aiPowered": "KI-gestützte Compliance",
+    "title": "Quantifier. Der KI-Agent für Compliance.",
+    "subtitle": "Automatisiert, umfassend und für Vertrauen gebaut.",
+    "description": "Ihr KI-Agent als rechte Hand für Compliance, der Projekte verwaltet, Daten in Ihrer Organisation sammelt und Ergebnisse präsentiert – und dabei den gesamten Compliance-Prozess erheblich automatisiert.",
+    "bookDemo": "Demo buchen",
+    "legalCompliance": "Rechtliche Compliance",
+    "aiAgent": "KI-Agent",
+    "timeSaving": "Zeitsparend",
+    "dashboard": "Compliance-Dashboard",
+    "realtime": "Echtzeit-Compliance-Status",
+    "overview": "Übersicht",
+    "aiCollection": "KI-Sammlung",
+    "projectCompleteness": "Projektvollständigkeit",
+    "dataCollectionStatus": "Datenerfassungsstatus",
+    "aiAgentCollecting": "KI-Agent sammelt automatisch Compliance-Daten",
+    "aiAgentActive": "KI-Agent aktiv",
+    "department": "Abteilung",
+    "status": "Status",
+    "progress": "Fortschritt",
+    "documents": "Dokumente",
+    "aiAgentCollectingData": "KI-Agent sammelt Daten aus 12 verschiedenen Systemen"
+  },
+  "stats": {
+    "companiesEvolving": "Unternehmen entwickeln sich weiter."
+  },
+  "steps": {
+    "title": "Compliance in 4 Schritten",
+    "description": "Unser optimierter Ansatz, um Compliance einfach, effizient und zuverlässig zu gestalten.",
+    "step1": {
+      "title": "Automatisieren Sie die Compliance mit Quantifiers KI-Agent",
+      "description": "Lassen Sie unsere KI Ihre Compliance-Prozesse von der Datenerfassung bis zur Berichterstattung übernehmen."
+    },
+    "step2": {
+      "title": "Zentralisieren Sie alle regulatorischen Anforderungen",
+      "description": "Bewahren Sie alle Ihre Compliance-Anforderungen an einem zugänglichen Ort auf."
+    },
+    "step3": {
+      "title": "Verfolgen & Berichten mit einem Echtzeit-Dashboard",
+      "description": "Überwachen Sie Ihren Compliance-Status mit intuitiven Visualisierungen und Berichten."
+    },
+    "step4": {
+      "title": "Bleiben Sie mit kontinuierlichen Compliance-Updates voraus",
+      "description": "Erhalten Sie automatische Updates, wenn sich Vorschriften ändern, die Ihr Unternehmen betreffen."
+    }
+  },
+  "agentFlow": {
+    "aiAgentFlow": "KI-Agent-Ablauf",
+    "complianceProjectStatus": "Kontinuierliche Compliance auf Autopilot mit dem Quantifier KI-Agenten",
+    "description": "Visualisierung, wie unser KI-Agent Compliance-Daten in Ihrer Organisation sammelt und den gesamten Prozess automatisiert.",
+    "projectPhases": "Projektphasen",
+    "dataCollection": "Datensammlung",
+    "dataAnalysis": "Datenanalyse",
+    "reportGeneration": "Berichtserstellung",
+    "overallProjectCompletion": "Gesamtprojektabschluss",
+    "organizationalDataCollection": "Organisatorische Datensammlung",
+    "department": "Abteilung",
+    "aiAgentActive": "KI-Agent aktiv",
+    "dataCollectionAutomation": "Automatisierung der Datenerfassung",
+    "aiAgentCollected": "Der KI-Agent hat automatisch 84 Dokumente aus der gesamten Organisation gesammelt und eliminiert manuelle Datenerfassung.",
+    "yourRightHand": "Ihr KI-Agent als rechte Hand für Compliance",
+    "ourAiAgent": "Unser KI-Agent verwaltet Projekte, sammelt Daten in Ihrer Organisation und präsentiert Ergebnisse – und automatisiert dabei den gesamten Compliance-Prozess erheblich.",
+    "crossOrganizational": "Organisationsübergreifend"
+  },
+  "benefits": {
+    "title": "Vorteile",
+    "whatYouGet": "Was Sie bekommen",
+    "description": "Quantifier bietet eine komplette Compliance-Management-Lösung mit diesen leistungsstarken Vorteilen.",
+    "continuousCompliance": {
+      "title": "Kontinuierliche Compliance",
+      "description": "Keine Brandbekämpfung mehr. Bleiben Sie jederzeit konform mit proaktiver Überwachung."
+    },
+    "aiPoweredRegulatory": {
+      "title": "KI-gestützter regulatorischer Assistent",
+      "description": "Unsere KI weiß, was Sie brauchen, bevor Sie es tun, und antizipiert regulatorische Anforderungen."
+    },
+    "seamlessIntegrations": {
+      "title": "Nahtlose Integrationen",
+      "description": "Funktioniert mit Ihren bestehenden ERP-, HR-, Excel- und anderen Geschäftssystemen."
+    },
+    "automatedReports": {
+      "title": "Automatisierte Berichte",
+      "description": "Generieren Sie fertige Berichte, die den Anforderungen von Prüfern und Behörden entsprechen."
+    },
+    "realTimeDashboard": {
+      "title": "Echtzeit-Dashboard",
+      "description": "Wissen Sie immer, wo Sie stehen, mit intuitiven Visualisierungen Ihres Compliance-Status."
+    }
+  },
+  "cta": {
+    "title": "Starten Sie Ihre Compliance-Reise heute",
+    "description": "Schließen Sie sich zukunftsorientierten Unternehmen an, die Quantifier nutzen, um ihre Compliance-Prozesse zu transformieren.",
+    "readyToTransform": "Bereit, Ihren Compliance-Prozess zu transformieren?",
+    "scheduleDemo": "Vereinbaren Sie eine personalisierte Demo, um zu sehen, wie unser KI-Compliance-Assistent Ihrer Organisation helfen kann.",
+    "bookDemo": "Demo buchen"
+  },
+  "footer": {
+    "description": "KI-gestützte Compliance-Lösungen, die Unternehmen helfen, komplexe regulatorische Landschaften mit Leichtigkeit zu navigieren.",
+    "contact": "Kontakt",
+    "address": "447 Sutter St Ste 405 PMB 137, San Francisco, CA 94108",
+    "rights": "Alle Rechte vorbehalten.",
+    "privacyPolicy": "Datenschutzrichtlinie",
+    "termsOfService": "Nutzungsbedingungen",
+    "cookies": "Cookies"
+  },
+  "language": {
+    "en": "Englisch",
+    "de": "Deutsch",
+    "es": "Spanisch",
+    "pl": "Polnisch",
+    "ro": "Rumänisch",
+    "cz": "Tschechisch",
+    "fr": "Französisch"
+  }
+}
