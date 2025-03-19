@@ -354,17 +354,7 @@ export const ContactForm = () => {
               </div>
             </div>
             
-            <div className="mt-10 p-8 bg-gradient-to-br from-quantifier-purple/20 to-quantifier-blue/20 rounded-xl border border-quantifier-purple/10">
-              <h4 className="font-semibold text-slate-800 mb-4">Schedule a Demo</h4>
-              <p className="text-slate-600 mb-6">
-                See Quantifier in action with a personalized demo tailored to your organization's needs.
-              </p>
-              <Button 
-                className="bg-gradient-to-r from-quantifier-purple to-quantifier-blue text-white shadow-sm hover:shadow-md w-full justify-center"
-              >
-                Book a Demo
-              </Button>
-            </div>
+            {/* Removed the "Book a Demo" section that was previously here */}
           </div>
         </div>
       </div>
