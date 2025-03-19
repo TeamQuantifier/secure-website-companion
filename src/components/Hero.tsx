@@ -59,9 +59,18 @@ export const Hero = () => {
               <p className="mt-6 text-lg text-slate-600 max-w-lg animate-slide-up animate-delay-400">
                 Automated, Comprehensive, and Built for Confidence.
               </p>
+              
+              <div className="mt-4 bg-quantifier-purple/10 border border-quantifier-purple/20 rounded-lg p-4 text-slate-800 animate-slide-up animate-delay-500">
+                <p className="font-semibold text-quantifier-purple">
+                  <span className="underline decoration-2 decoration-quantifier-purple/70">
+                    Not just a tool, but a complete AI agent compliance officer
+                  </span> that manages projects, collects data across your organization, and 
+                  showcases results—significantly automating the entire compliance process.
+                </p>
+              </div>
             </div>
             
-            <div className="flex flex-col sm:flex-row items-start sm:items-center gap-4 pt-4 animate-slide-up animate-delay-500">
+            <div className="flex flex-col sm:flex-row items-start sm:items-center gap-4 pt-4 animate-slide-up animate-delay-600">
               <Button 
                 size="lg" 
                 className="bg-gradient-to-r from-quantifier-purple to-quantifier-blue text-white shadow-sm hover:shadow-md transition-all group"
