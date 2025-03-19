@@ -72,9 +72,10 @@ export const ContactForm = () => {
     
     try {
       // First, save to Supabase directly
+      // Fix: Pass data as a single object, not an array
       const { error: supabaseError } = await supabase
         .from('contact_submissions')
-        .insert([data]);
+        .insert(data); // Removed the array brackets
       
       if (supabaseError) {
         console.error("Supabase error:", supabaseError);

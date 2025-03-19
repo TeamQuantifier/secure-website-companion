@@ -105,10 +105,10 @@ export const WhyQuantifier = () => {
         message: "This is a submission from the quick contact form in the Why Quantifier section."
       };
       
-      // Save to Supabase
+      // Save to Supabase - Fix: Pass formData as a single object, not an array
       const { error: supabaseError } = await supabase
         .from('contact_submissions')
-        .insert([formData]);
+        .insert(formData); // Removed the array brackets
       
       if (supabaseError) {
         console.error("Supabase error:", supabaseError);
