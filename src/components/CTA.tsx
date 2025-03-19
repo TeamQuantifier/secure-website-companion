@@ -3,6 +3,7 @@ import { useState, useRef, useEffect } from 'react';
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from 'lucide-react';
 import { useTranslation } from 'react-i18next';
+import { scrollToContact } from '@/utils/scrollHelpers';
 
 export const CTA = () => {
   const { t } = useTranslation();
@@ -57,6 +58,7 @@ export const CTA = () => {
               <Button 
                 className="bg-gradient-to-r from-quantifier-purple to-quantifier-blue text-white transition-all shadow-md hover:shadow-lg group"
                 size="lg"
+                onClick={scrollToContact}
               >
                 <span>{t('cta.bookDemo')}</span>
                 <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />

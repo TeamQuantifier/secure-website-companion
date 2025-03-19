@@ -1,3 +1,4 @@
+
 import { useState, useEffect } from 'react';
 import { Button } from "@/components/ui/button";
 import { ArrowRight, ShieldCheck, FileCheck, Clock, PieChart, Bot, Database, CheckCircle } from 'lucide-react';
@@ -6,6 +7,7 @@ import { Progress } from "@/components/ui/progress";
 import { Table, TableHeader, TableRow, TableHead, TableBody, TableCell } from "@/components/ui/table";
 import { ChartContainer } from "@/components/ui/chart";
 import { PieChart as RechartsChart, Pie, Cell, Tooltip, ResponsiveContainer } from 'recharts';
+import { scrollToContact } from '@/utils/scrollHelpers';
 
 export const Hero = () => {
   const [isLoaded, setIsLoaded] = useState(false);
@@ -73,6 +75,7 @@ export const Hero = () => {
               <Button 
                 size="lg" 
                 className="bg-gradient-to-r from-quantifier-purple to-quantifier-blue text-white shadow-sm hover:shadow-md transition-all group"
+                onClick={scrollToContact}
               >
                 <span>Book a Demo</span>
                 <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />

@@ -2,8 +2,9 @@
 import { useState, useEffect, useRef } from 'react';
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
-import { CheckCircle } from 'lucide-react';
+import { CheckCircle, ArrowRight } from 'lucide-react';
 import { useTranslation } from 'react-i18next';
+import { scrollToContact } from '@/utils/scrollHelpers';
 
 export const Stats = () => {
   const { t } = useTranslation();
@@ -83,6 +84,16 @@ export const Stats = () => {
             </div>
             <p className="text-slate-600">{t('stats.confidence')}</p>
           </div>
+        </div>
+        
+        <div className="mt-12 text-center">
+          <Button 
+            className="bg-gradient-to-r from-quantifier-purple to-quantifier-blue text-white shadow-sm hover:shadow-md transition-all group"
+            onClick={scrollToContact}
+          >
+            <span>{t('navbar.bookDemo')}</span>
+            <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
+          </Button>
         </div>
       </div>
     </section>

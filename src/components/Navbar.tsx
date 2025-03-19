@@ -4,6 +4,7 @@ import { Button } from "@/components/ui/button";
 import { Menu, X } from 'lucide-react';
 import { useTranslation } from 'react-i18next';
 import { LanguageSwitcher } from './LanguageSwitcher';
+import { scrollToContact } from '@/utils/scrollHelpers';
 
 export const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -66,6 +67,7 @@ export const Navbar = () => {
           <LanguageSwitcher />
           <Button 
             className="bg-gradient-to-r from-quantifier-purple to-quantifier-blue text-white transition-all shadow-sm hover:shadow-md"
+            onClick={scrollToContact}
           >
             {t('navbar.bookDemo')}
           </Button>
@@ -124,6 +126,10 @@ export const Navbar = () => {
             <div className="pt-4 border-t border-slate-200 flex flex-col space-y-3">
               <Button 
                 className="bg-gradient-to-r from-quantifier-purple to-quantifier-blue text-white w-full justify-center"
+                onClick={() => {
+                  setIsMobileMenuOpen(false);
+                  scrollToContact();
+                }}
               >
                 {t('navbar.bookDemo')}
               </Button>

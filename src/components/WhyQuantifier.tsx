@@ -7,6 +7,7 @@ import { useToast } from "@/hooks/use-toast";
 import { Alert, AlertTitle, AlertDescription } from "@/components/ui/alert";
 import { supabase } from "@/integrations/supabase/client";
 import { useTranslation } from 'react-i18next';
+import { scrollToContact } from '@/utils/scrollHelpers';
 
 export const WhyQuantifier = () => {
   const { t } = useTranslation();
