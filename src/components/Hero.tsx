@@ -86,7 +86,7 @@ export const Hero = () => {
               </div>
               <div className="flex items-center gap-2">
                 <FileCheck className="h-5 w-5 text-quantifier-purple" />
-                <span>ESG Reporting</span>
+                <span>AI Agent</span>
               </div>
               <div className="flex items-center gap-2">
                 <Clock className="h-5 w-5 text-quantifier-purple" />
