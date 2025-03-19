@@ -38,7 +38,7 @@ export const Navbar = () => {
           <img 
             src="/lovable-uploads/5a1ee696-13e4-488a-a848-0ccd9f816b98.png" 
             alt="Quantifier Logo" 
-            className="h-8 md:h-10" 
+            className="h-8 md:h-10 object-contain" 
           />
           <span className="text-xl font-bold bg-gradient-to-r from-quantifier-purple to-quantifier-blue bg-clip-text text-transparent">
             Quantifier
