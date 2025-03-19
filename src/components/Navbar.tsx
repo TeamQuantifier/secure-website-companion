@@ -32,7 +32,7 @@ export const Navbar = () => {
       <div className="max-w-7xl mx-auto flex items-center justify-between">
         <a href="/" className="flex items-center gap-2">
           <img 
-            src="/lovable-uploads/a063b189-54c2-413c-bd4c-4a827843ffae.png" 
+            src="/lovable-uploads/d300b783-71c1-4a77-83d9-ac99e76df15d.png" 
             alt="Quantifier Logo" 
             className="h-8 md:h-10" 
           />

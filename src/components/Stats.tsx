@@ -104,11 +104,13 @@ export const Stats = () => {
                 />
                 <div className="text-center">
                   <p className="text-slate-700 font-medium italic mb-4">
-                    "Quantifier has revolutionized our compliance process, reducing our reporting time by 70%."
+                    "This Innovative solutions not only meet strict regulatory requirements but also effectively address business needs."
                   </p>
-                  <p className="text-sm text-slate-500">
-                    — Mark Schmidt, Director of Compliance
-                  </p>
+                  <div className="text-sm text-slate-500">
+                    <p className="font-medium">Michał Miszułowicz</p>
+                    <p>Director of Innovation Sector Collaboration</p>
+                    <p>BNP Paribas Bank Polska</p>
+                  </div>
                 </div>
               </div>
             </div>

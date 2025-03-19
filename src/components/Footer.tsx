@@ -1,4 +1,3 @@
-
 import { Mail, Phone, MapPin, Twitter, Linkedin, Github } from 'lucide-react';
 
 export const Footer = () => {
@@ -9,7 +8,7 @@ export const Footer = () => {
           <div>
             <div className="flex items-center mb-4">
               <img 
-                src="/lovable-uploads/a063b189-54c2-413c-bd4c-4a827843ffae.png" 
+                src="/lovable-uploads/d300b783-71c1-4a77-83d9-ac99e76df15d.png" 
                 alt="Quantifier Logo" 
                 className="h-10 mr-2"
               />
