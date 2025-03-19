@@ -121,5 +121,39 @@
     "ro": "Rumuński",
     "cz": "Czeski",
     "fr": "Francuski"
+  },
+  "whyQuantifier": {
+    "ourDifference": "Nasza przewaga",
+    "whyQuantifier": "Dlaczego Quantifier",
+    "reimaginedCompliance": "Przemyśleliśmy zarządzanie zgodnością od podstaw, tworząc rozwiązanie, które naprawdę spełnia potrzeby nowoczesnego biznesu.",
+    "yourRightHand": "Twój Agent AI jako prawa ręka Oficera Zgodności, który zarządza projektami, zbiera dane w całej organizacji i prezentuje wyniki — znacznie automatyzując cały proces zgodności.",
+    "completeAiOfficer": "Kompletny Oficer Zgodności AI",
+    "completeAiOfficerDesc": "Nie tylko narzędzie, ale kompleksowy agent, który w pełni zarządza procesem zgodności.",
+    "dataCollection": "Zbieranie danych z całej organizacji",
+    "dataCollectionDesc": "Automatycznie łączy się z różnymi działami, aby gromadzić wymagane dane zgodności.",
+    "projectManagement": "Automatyzacja zarządzania projektami",
+    "projectManagementDesc": "Obsługuje cały cykl życia projektu zgodności od planowania do raportowania.",
+    "resultVisualization": "Wizualizacja i raportowanie wyników",
+    "resultVisualizationDesc": "Przekształca złożone dane zgodności w jasne, przydatne spostrzeżenia i raporty.",
+    "aiNative": "Natywna AI",
+    "aiNativeDesc": "Zbudowany od podstaw z myślą o automatyzacji, a nie tylko jako funkcja dodatkowa.",
+    "modular": "Modułowy i skalowalny",
+    "modularDesc": "Dostosowuje się do potrzeb Twojego biznesu z kompleksową ofertą zgodności.",
+    "simple": "Prosty i intuicyjny",
+    "simpleDesc": "Bez stromej krzywej uczenia się, zaprojektowany z myślą o łatwości użytkowania.",
+    "savesTime": "Oszczędza czas",
+    "savesTimeDesc": "Automatyzuje zarządzanie projektami i zbieranie danych, uwalniając Twoje zasoby.",
+    "evolving": "Firmy ewoluują. Zgodność też powinna.",
+    "joinForward": "Dołącz do organizacji myślących przyszłościowo, które przekształcają swoją zgodność z obciążenia w przewagę konkurencyjną.",
+    "contactUs": "Skontaktuj się z nami",
+    "getInTouch": "Skontaktuj się",
+    "sending": "Wysyłanie...",
+    "emailPlaceholder": "Wprowadź swój email",
+    "weWillGetBack": "Odezwiemy się tak szybko, jak to możliwe"
+  },
+  "stats": {
+    "struggling": "firm zmaga się z zarządzaniem zgodnością",
+    "reduction": "redukcja czasu poświęconego na zadania związane ze zgodnością dzięki Quantifier",
+    "confidence": "naszych klientów zgłasza większą pewność co do swojego statusu zgodności"
   }
 }

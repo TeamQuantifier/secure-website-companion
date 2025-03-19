@@ -57,7 +57,7 @@ export const Stats = () => {
                 <span className="text-3xl font-bold text-slate-800">92%</span>
               </div>
             </div>
-            <p className="text-slate-600">of companies are struggling with compliance management</p>
+            <p className="text-slate-600">{t('stats.struggling')}</p>
           </div>
           
           <div className={`bg-white rounded-xl p-6 border border-slate-200 shadow-sm ${isInView ? 'animate-fade-in animate-delay-200' : 'opacity-0'}`}>
@@ -69,7 +69,7 @@ export const Stats = () => {
                 <span className="text-3xl font-bold text-slate-800">76%</span>
               </div>
             </div>
-            <p className="text-slate-600">reduction in time spent on compliance tasks with Quantifier</p>
+            <p className="text-slate-600">{t('stats.reduction')}</p>
           </div>
           
           <div className={`bg-white rounded-xl p-6 border border-slate-200 shadow-sm ${isInView ? 'animate-fade-in animate-delay-300' : 'opacity-0'}`}>
@@ -81,7 +81,7 @@ export const Stats = () => {
                 <span className="text-3xl font-bold text-slate-800">85%</span>
               </div>
             </div>
-            <p className="text-slate-600">of our clients report higher confidence in their compliance status</p>
+            <p className="text-slate-600">{t('stats.confidence')}</p>
           </div>
         </div>
       </div>

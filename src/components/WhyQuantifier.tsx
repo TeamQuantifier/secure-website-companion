@@ -6,62 +6,10 @@ import { Input } from "@/components/ui/input";
 import { useToast } from "@/hooks/use-toast";
 import { Alert, AlertTitle, AlertDescription } from "@/components/ui/alert";
 import { supabase } from "@/integrations/supabase/client";
-
-const reasons = [
-  {
-    title: "Complete AI Compliance Officer",
-    description: "Not just a tool, but a comprehensive agent that fully manages your compliance process.",
-    icon: Bot,
-    delay: 100
-  },
-  {
-    title: "Cross-Organizational Data Collection",
-    description: "Automatically connects with various departments to gather required compliance data.",
-    icon: Database,
-    delay: 200
-  },
-  {
-    title: "Project Management Automation",
-    description: "Handles the entire compliance project lifecycle from planning to reporting.",
-    icon: FileCheck,
-    delay: 300
-  },
-  {
-    title: "Result Visualization & Reporting",
-    description: "Transforms complex compliance data into clear, actionable insights and reports.",
-    icon: Shield,
-    delay: 400
-  }
-];
-
-const additionalReasons = [
-  {
-    title: "AI-Native",
-    description: "Built from the ground up for automation, not just an add-on feature.",
-    icon: Bot,
-    delay: 500
-  },
-  {
-    title: "Modular & Scalable",
-    description: "Adapts to your business needs with comprehensive compliance offering.",
-    icon: Layers,
-    delay: 600
-  },
-  {
-    title: "Simple & Intuitive",
-    description: "No steep learning curve, designed for ease of use.",
-    icon: Sparkles,
-    delay: 700
-  },
-  {
-    title: "Saves Time",
-    description: "Automates project management and data collection, freeing up your resources.",
-    icon: Clock,
-    delay: 800
-  }
-];
+import { useTranslation } from 'react-i18next';
 
 export const WhyQuantifier = () => {
+  const { t } = useTranslation();
   const [isInView, setIsInView] = useState(false);
   const [email, setEmail] = useState('');
   const [isSubmitting, setIsSubmitting] = useState(false);
@@ -86,6 +34,60 @@ export const WhyQuantifier = () => {
 
     return () => observer.disconnect();
   }, []);
+
+  const reasons = [
+    {
+      title: t('whyQuantifier.completeAiOfficer'),
+      description: t('whyQuantifier.completeAiOfficerDesc'),
+      icon: Bot,
+      delay: 100
+    },
+    {
+      title: t('whyQuantifier.dataCollection'),
+      description: t('whyQuantifier.dataCollectionDesc'),
+      icon: Database,
+      delay: 200
+    },
+    {
+      title: t('whyQuantifier.projectManagement'),
+      description: t('whyQuantifier.projectManagementDesc'),
+      icon: FileCheck,
+      delay: 300
+    },
+    {
+      title: t('whyQuantifier.resultVisualization'),
+      description: t('whyQuantifier.resultVisualizationDesc'),
+      icon: Shield,
+      delay: 400
+    }
+  ];
+
+  const additionalReasons = [
+    {
+      title: t('whyQuantifier.aiNative'),
+      description: t('whyQuantifier.aiNativeDesc'),
+      icon: Bot,
+      delay: 500
+    },
+    {
+      title: t('whyQuantifier.modular'),
+      description: t('whyQuantifier.modularDesc'),
+      icon: Layers,
+      delay: 600
+    },
+    {
+      title: t('whyQuantifier.simple'),
+      description: t('whyQuantifier.simpleDesc'),
+      icon: Sparkles,
+      delay: 700
+    },
+    {
+      title: t('whyQuantifier.savesTime'),
+      description: t('whyQuantifier.savesTimeDesc'),
+      icon: Clock,
+      delay: 800
+    }
+  ];
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
@@ -161,23 +163,22 @@ export const WhyQuantifier = () => {
         <div className="text-center mb-16">
           <div className="inline-flex items-center px-3 py-1 rounded-full bg-quantifier-purple/10 border border-quantifier-purple/20 text-quantifier-purple text-xs font-medium mb-6">
             <Bot className="mr-2 h-3.5 w-3.5" />
-            Our Difference
+            {t('whyQuantifier.ourDifference')}
           </div>
           
           <h2 className={`text-3xl md:text-4xl font-bold text-slate-800 mb-6 ${isInView ? 'animate-slide-up' : 'opacity-0'}`}>
-            Why Quantifier
+            {t('whyQuantifier.whyQuantifier')}
           </h2>
           
           <p className={`text-lg text-slate-600 max-w-2xl mx-auto mb-8 ${isInView ? 'animate-slide-up animate-delay-100' : 'opacity-0'}`}>
-            We've reimagined compliance management from first principles, creating a solution that truly meets modern business needs.
+            {t('whyQuantifier.reimaginedCompliance')}
           </p>
           
           <div className={`inline-block bg-quantifier-purple/10 border border-quantifier-purple/20 rounded-lg px-6 py-4 text-slate-800 mb-16 ${isInView ? 'animate-slide-up animate-delay-200' : 'opacity-0'}`}>
             <p className="font-semibold text-quantifier-purple text-lg">
               <span className="underline decoration-2 decoration-quantifier-purple/70">
-                Your right hand AI Agent Compliance Officer
-              </span> that manages projects, collects data across your organization, and 
-              showcases results—significantly automating the entire compliance process.
+                {t('whyQuantifier.yourRightHand')}
+              </span>
             </p>
           </div>
         </div>
@@ -204,17 +205,17 @@ export const WhyQuantifier = () => {
           <div className="bg-white rounded-xl p-10">
             <div className="text-center space-y-6">
               <h3 className="text-2xl font-bold text-slate-800">
-                Companies are evolving.<br />
-                Compliance should too.
+                {t('whyQuantifier.evolving')}<br />
+                {t('stats.companiesEvolving')}
               </h3>
               
               <p className="text-slate-600 mb-8">
-                Join forward-thinking organizations that are transforming their compliance from a burden into a competitive advantage.
+                {t('whyQuantifier.joinForward')}
               </p>
               
               {/* Contact Form - Replaces Quantifier Logo */}
               <div className="max-w-md mx-auto">
-                <h4 className="text-xl font-semibold text-quantifier-purple mb-4">Contact Us</h4>
+                <h4 className="text-xl font-semibold text-quantifier-purple mb-4">{t('whyQuantifier.contactUs')}</h4>
                 
                 {submissionError && (
                   <Alert variant="destructive" className="mb-4">
@@ -227,7 +228,7 @@ export const WhyQuantifier = () => {
                   <div>
                     <Input
                       type="email"
-                      placeholder="Enter your email"
+                      placeholder={t('whyQuantifier.emailPlaceholder')}
                       value={email}
                       onChange={(e) => setEmail(e.target.value)}
                       required
@@ -242,18 +243,18 @@ export const WhyQuantifier = () => {
                     {isSubmitting ? (
                       <>
                         <Loader2 className="mr-2 h-4 w-4 animate-spin" />
-                        Sending...
+                        {t('whyQuantifier.sending')}
                       </>
                     ) : (
                       <>
-                        Get in Touch
+                        {t('whyQuantifier.getInTouch')}
                         <ArrowRight className="ml-2 h-4 w-4" />
                       </>
                     )}
                   </Button>
                 </form>
                 <p className="text-sm text-slate-500 mt-4">
-                  We'll get back to you as soon as possible
+                  {t('whyQuantifier.weWillGetBack')}
                 </p>
               </div>
             </div>
