@@ -66,16 +66,25 @@ export const ContactForm = () => {
     },
   });
 
-  async function onSubmit(data: z.infer<typeof formSchema>) {
+  async function onSubmit(values: z.infer<typeof formSchema>) {
     setIsSubmitting(true);
     setFormError(null);
     
     try {
-      // First, save to Supabase directly
-      // Fix: Pass data as a single object, not an array
+      // Ensure all required fields are present and correctly typed
+      const data = {
+        name: values.name,
+        email: values.email,
+        phone: values.phone || null, // Convert empty string to null for DB
+        company: values.company,
+        message: values.message,
+        interest: values.interest,
+      };
+      
+      // Save to Supabase
       const { error: supabaseError } = await supabase
         .from('contact_submissions')
-        .insert(data); // Removed the array brackets
+        .insert(data);
       
       if (supabaseError) {
         console.error("Supabase error:", supabaseError);

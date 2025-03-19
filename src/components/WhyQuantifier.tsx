@@ -95,20 +95,20 @@ export const WhyQuantifier = () => {
     setSubmissionError(null);
     
     try {
-      // Prepare form data (simplified version for email-only form)
+      // Prepare form data - ensure all required fields have valid values
       const formData = {
-        name: "Quick Contact Form",
-        email: email,
-        phone: "",
-        company: "Not provided",
-        interest: "Quick Contact",
-        message: "This is a submission from the quick contact form in the Why Quantifier section."
+        name: "Quick Contact Form", // Non-nullable field
+        email: email, // Non-nullable field
+        phone: null, // Nullable field, so null is acceptable
+        company: "Not provided", // Non-nullable field, providing a default
+        interest: "Quick Contact", // Non-nullable field
+        message: "This is a submission from the quick contact form in the Why Quantifier section." // Non-nullable field
       };
       
-      // Save to Supabase - Fix: Pass formData as a single object, not an array
+      // Save to Supabase
       const { error: supabaseError } = await supabase
         .from('contact_submissions')
-        .insert(formData); // Removed the array brackets
+        .insert(formData);
       
       if (supabaseError) {
         console.error("Supabase error:", supabaseError);
