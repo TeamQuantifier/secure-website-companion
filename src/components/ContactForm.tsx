@@ -3,7 +3,7 @@ import { useState, useRef, useEffect } from 'react';
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
-import { Check, ChevronDown, Mail, Phone, MapPin } from 'lucide-react';
+import { Check, ChevronDown, Mail, Phone, MapPin, Loader2 } from 'lucide-react';
 import {
   Form,
   FormControl,
@@ -16,6 +16,8 @@ import { useForm } from "react-hook-form";
 import { z } from "zod";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { useToast } from "@/hooks/use-toast";
+import { Alert, AlertTitle, AlertDescription } from "@/components/ui/alert";
+import { supabase } from "@/integrations/supabase/client";
 
 const formSchema = z.object({
   name: z.string().min(2, { message: "Name must be at least 2 characters." }),
@@ -30,6 +32,7 @@ export const ContactForm = () => {
   const [isInView, setIsInView] = useState(false);
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [isSubmitted, setIsSubmitted] = useState(false);
+  const [formError, setFormError] = useState<string | null>(null);
   const sectionRef = useRef<HTMLElement>(null);
   const { toast } = useToast();
 
@@ -63,26 +66,55 @@ export const ContactForm = () => {
     },
   });
 
-  function onSubmit(data: z.infer<typeof formSchema>) {
+  async function onSubmit(data: z.infer<typeof formSchema>) {
     setIsSubmitting(true);
+    setFormError(null);
     
-    // Simulate form submission
-    setTimeout(() => {
-      console.log("Form submitted:", data);
-      setIsSubmitting(false);
-      setIsSubmitted(true);
+    try {
+      // First, save to Supabase directly
+      const { error: supabaseError } = await supabase
+        .from('contact_submissions')
+        .insert([data]);
       
+      if (supabaseError) {
+        console.error("Supabase error:", supabaseError);
+        throw new Error("Failed to save your message. Please try again.");
+      }
+      
+      // Then, call edge function to send an email
+      const response = await supabase.functions.invoke('submit-contact', {
+        body: data
+      });
+      
+      if (!response.data?.success) {
+        console.error("Edge function error:", response.error);
+        // We still show success since the data was saved to the database
+      }
+      
+      // Show success message
       toast({
         title: "Message sent!",
         description: "We'll get back to you as soon as possible.",
       });
+      
+      setIsSubmitted(true);
       
       // Reset after 3 seconds
       setTimeout(() => {
         setIsSubmitted(false);
         form.reset();
       }, 3000);
-    }, 1500);
+    } catch (error) {
+      console.error("Form submission error:", error);
+      setFormError(error.message || "An unexpected error occurred. Please try again.");
+      toast({
+        title: "Error sending message",
+        description: error.message || "Please try again later.",
+        variant: "destructive",
+      });
+    } finally {
+      setIsSubmitting(false);
+    }
   }
 
   const interests = [
@@ -118,6 +150,13 @@ export const ContactForm = () => {
             <h3 className="text-xl font-semibold text-slate-800 mb-6">
               Send us a message
             </h3>
+            
+            {formError && (
+              <Alert variant="destructive" className="mb-6">
+                <AlertTitle>Error</AlertTitle>
+                <AlertDescription>{formError}</AlertDescription>
+              </Alert>
+            )}
             
             {isSubmitted ? (
               <div className="text-center py-10">
@@ -240,7 +279,12 @@ export const ContactForm = () => {
                     size="lg"
                     disabled={isSubmitting}
                   >
-                    {isSubmitting ? "Sending..." : "Send Message"}
+                    {isSubmitting ? (
+                      <>
+                        <Loader2 className="mr-2 h-4 w-4 animate-spin" />
+                        Sending...
+                      </>
+                    ) : "Send Message"}
                   </Button>
                 </form>
               </Form>

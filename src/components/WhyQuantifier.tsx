@@ -1,9 +1,11 @@
 
 import { useState, useEffect, useRef } from 'react';
-import { Bot, Layers, Sparkles, Clock, Database, FileCheck, Shield, ArrowRight } from 'lucide-react';
+import { Bot, Layers, Sparkles, Clock, Database, FileCheck, Shield, ArrowRight, Loader2 } from 'lucide-react';
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { useToast } from "@/hooks/use-toast";
+import { Alert, AlertTitle, AlertDescription } from "@/components/ui/alert";
+import { supabase } from "@/integrations/supabase/client";
 
 const reasons = [
   {
@@ -63,6 +65,7 @@ export const WhyQuantifier = () => {
   const [isInView, setIsInView] = useState(false);
   const [email, setEmail] = useState('');
   const [isSubmitting, setIsSubmitting] = useState(false);
+  const [submissionError, setSubmissionError] = useState<string | null>(null);
   const sectionRef = useRef<HTMLElement>(null);
   const { toast } = useToast();
 
@@ -84,21 +87,62 @@ export const WhyQuantifier = () => {
     return () => observer.disconnect();
   }, []);
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     if (!email) return;
     
     setIsSubmitting(true);
+    setSubmissionError(null);
     
-    // Simulate form submission
-    setTimeout(() => {
+    try {
+      // Prepare form data (simplified version for email-only form)
+      const formData = {
+        name: "Quick Contact Form",
+        email: email,
+        phone: "",
+        company: "Not provided",
+        interest: "Quick Contact",
+        message: "This is a submission from the quick contact form in the Why Quantifier section."
+      };
+      
+      // Save to Supabase
+      const { error: supabaseError } = await supabase
+        .from('contact_submissions')
+        .insert([formData]);
+      
+      if (supabaseError) {
+        console.error("Supabase error:", supabaseError);
+        throw new Error("Failed to save your contact information. Please try again.");
+      }
+      
+      // Call edge function for email
+      const response = await supabase.functions.invoke('submit-contact', {
+        body: formData
+      });
+      
+      if (!response.data?.success) {
+        console.error("Edge function error:", response.error);
+        // We still show success since data was saved to database
+      }
+      
       toast({
         title: "Thanks for contacting us!",
         description: "We'll get back to you soon.",
       });
+      
       setEmail('');
+    } catch (error) {
+      console.error("Form submission error:", error);
+      setSubmissionError(error.message || "An unexpected error occurred");
+      
+      toast({
+        title: "Error",
+        description: error.message || "Failed to submit form. Please try again.",
+        variant: "destructive",
+      });
+    } finally {
       setIsSubmitting(false);
-    }, 1000);
+    }
   };
 
   return (
@@ -171,6 +215,14 @@ export const WhyQuantifier = () => {
               {/* Contact Form - Replaces Quantifier Logo */}
               <div className="max-w-md mx-auto">
                 <h4 className="text-xl font-semibold text-quantifier-purple mb-4">Contact Us</h4>
+                
+                {submissionError && (
+                  <Alert variant="destructive" className="mb-4">
+                    <AlertTitle>Error</AlertTitle>
+                    <AlertDescription>{submissionError}</AlertDescription>
+                  </Alert>
+                )}
+                
                 <form onSubmit={handleSubmit} className="space-y-4">
                   <div>
                     <Input
@@ -187,8 +239,17 @@ export const WhyQuantifier = () => {
                     className="w-full bg-gradient-to-r from-quantifier-purple to-quantifier-blue text-white"
                     disabled={isSubmitting}
                   >
-                    {isSubmitting ? "Sending..." : "Get in Touch"}
-                    <ArrowRight className="ml-2 h-4 w-4" />
+                    {isSubmitting ? (
+                      <>
+                        <Loader2 className="mr-2 h-4 w-4 animate-spin" />
+                        Sending...
+                      </>
+                    ) : (
+                      <>
+                        Get in Touch
+                        <ArrowRight className="ml-2 h-4 w-4" />
+                      </>
+                    )}
                   </Button>
                 </form>
                 <p className="text-sm text-slate-500 mt-4">
