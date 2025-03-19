@@ -16,7 +16,7 @@ const complianceAreas = [
     delay: 200
   },
   {
-    title: "Sustainability Statements",
+    title: "Sustainability Compliance",
     description: "ESG, GHG, LCA, CBAM",
     icon: Leaf,
     delay: 300
