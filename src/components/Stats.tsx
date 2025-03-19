@@ -63,7 +63,7 @@ export const Stats = () => {
           </p>
         </div>
         
-        {/* Improved Trusted Us Section */}
+        {/* Improved TÜV NORD Section */}
         <div className="mt-20">
           <div className={`max-w-5xl mx-auto bg-white/80 backdrop-blur-sm rounded-2xl shadow-elevated border border-slate-200/60 overflow-hidden ${isInView ? 'animate-fade-in animate-delay-500' : 'opacity-0'}`}>
             <div className="grid md:grid-cols-2 items-center">
@@ -71,10 +71,10 @@ export const Stats = () => {
               <div className="p-8 md:p-12 bg-gradient-to-br from-quantifier-darkpurple/10 to-quantifier-blue/10">
                 <Badge className="bg-quantifier-purple text-white mb-4">TÜV NORD CERTIFIED</Badge>
                 <h3 className="text-2xl md:text-3xl font-bold text-slate-800 mb-4">
-                  Certified Excellence in Compliance Solutions
+                  TÜV NORD Certified Excellence
                 </h3>
                 <p className="text-slate-600 mb-6">
-                  Our compliance solution is certified by TÜV NORD, guaranteeing the highest standards of security, reliability, and quality in our AI-powered solutions.
+                  Our AI-powered compliance solution is certified by TÜV NORD, guaranteeing the highest standards of security, reliability, and quality in our AI-powered compliance solutions.
                 </p>
                 <div className="space-y-3 mb-6">
                   <div className="flex items-start gap-2">
@@ -114,32 +114,95 @@ export const Stats = () => {
             </div>
           </div>
           
-          {/* Trusted By Logos */}
-          <div className="mt-16 text-center">
-            <p className="text-lg font-semibold text-slate-700 mb-8">TRUSTED BY INDUSTRY LEADERS</p>
+          {/* Enhanced Trusted By Logos */}
+          <div className="mt-16">
+            <div className="text-center mb-12">
+              <h3 className="text-2xl font-bold text-slate-800 mb-4">Trusted By Industry Leaders</h3>
+              <p className="text-lg text-slate-600 max-w-2xl mx-auto">
+                Forward-thinking organizations rely on Quantifier to transform their compliance operations
+              </p>
+            </div>
             
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-4xl mx-auto">
-              <div className="bg-white/80 backdrop-blur-sm rounded-lg p-5 flex items-center justify-center shadow-sm border border-slate-200/40 transition-all hover:shadow-md">
+            <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-8 max-w-6xl mx-auto">
+              <div className="bg-white/90 rounded-lg p-5 flex items-center justify-center shadow-sm border border-slate-200/40 transition-all hover:shadow-md h-24">
+                <img 
+                  src="/lovable-uploads/2bcb9071-2d6e-4239-bfc6-efc6d8160d59.png" 
+                  alt="Compensa Vienna Insurance Group" 
+                  className="max-h-full max-w-full object-contain"
+                />
+              </div>
+              
+              <div className="bg-white/90 rounded-lg p-5 flex items-center justify-center shadow-sm border border-slate-200/40 transition-all hover:shadow-md h-24">
+                <img 
+                  src="/lovable-uploads/ea68fa46-eb95-40df-8dea-1529e818bf03.png" 
+                  alt="4F" 
+                  className="max-h-full max-w-full object-contain"
+                />
+              </div>
+              
+              <div className="bg-white/90 rounded-lg p-5 flex items-center justify-center shadow-sm border border-slate-200/40 transition-all hover:shadow-md h-24">
                 <img 
                   src="/lovable-uploads/99ff3f42-89f3-4c45-b976-cf9cff5d6dc3.png" 
-                  alt="Client Logo 1" 
-                  className="h-12 md:h-16 object-contain"
+                  alt="Bank Polski" 
+                  className="max-h-full max-w-full object-contain"
                 />
               </div>
               
-              <div className="bg-white/80 backdrop-blur-sm rounded-lg p-5 flex items-center justify-center shadow-sm border border-slate-200/40 transition-all hover:shadow-md">
+              <div className="bg-white/90 rounded-lg p-5 flex items-center justify-center shadow-sm border border-slate-200/40 transition-all hover:shadow-md h-24">
                 <img 
                   src="/lovable-uploads/d33c8b89-5883-40c7-af9a-c7eae6d62703.png" 
-                  alt="Client Logo 2" 
-                  className="h-12 md:h-16 object-contain"
+                  alt="BNP Paribas" 
+                  className="max-h-full max-w-full object-contain"
                 />
               </div>
               
-              <div className="bg-white/80 backdrop-blur-sm rounded-lg p-5 flex items-center justify-center shadow-sm border border-slate-200/40 transition-all hover:shadow-md">
+              <div className="bg-white/90 rounded-lg p-5 flex items-center justify-center shadow-sm border border-slate-200/40 transition-all hover:shadow-md h-24">
                 <img 
                   src="/lovable-uploads/fe277b04-5c32-4263-865c-1f0111aa42d0.png" 
-                  alt="Client Logo 3" 
-                  className="h-12 md:h-16 object-contain"
+                  alt="Loco Trans-Sped" 
+                  className="max-h-full max-w-full object-contain"
+                />
+              </div>
+            </div>
+            
+            <div className="mt-8 grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-8 max-w-6xl mx-auto">
+              <div className="bg-white/90 rounded-lg p-5 flex items-center justify-center shadow-sm border border-slate-200/40 transition-all hover:shadow-md h-24">
+                <img 
+                  src="/lovable-uploads/ea68fa46-eb95-40df-8dea-1529e818bf03.png" 
+                  alt="Dr Irena Eris" 
+                  className="max-h-full max-w-full object-contain opacity-90"
+                />
+              </div>
+              
+              <div className="bg-white/90 rounded-lg p-5 flex items-center justify-center shadow-sm border border-slate-200/40 transition-all hover:shadow-md h-24">
+                <img 
+                  src="/lovable-uploads/2bcb9071-2d6e-4239-bfc6-efc6d8160d59.png" 
+                  alt="RBB" 
+                  className="max-h-full max-w-full object-contain opacity-90"
+                />
+              </div>
+              
+              <div className="bg-white/90 rounded-lg p-5 flex items-center justify-center shadow-sm border border-slate-200/40 transition-all hover:shadow-md h-24">
+                <img 
+                  src="/lovable-uploads/99ff3f42-89f3-4c45-b976-cf9cff5d6dc3.png" 
+                  alt="NOMAX" 
+                  className="max-h-full max-w-full object-contain opacity-90"
+                />
+              </div>
+              
+              <div className="bg-white/90 rounded-lg p-5 flex items-center justify-center shadow-sm border border-slate-200/40 transition-all hover:shadow-md h-24">
+                <img 
+                  src="/lovable-uploads/d33c8b89-5883-40c7-af9a-c7eae6d62703.png" 
+                  alt="Real Management" 
+                  className="max-h-full max-w-full object-contain opacity-90"
+                />
+              </div>
+              
+              <div className="bg-white/90 rounded-lg p-5 flex items-center justify-center shadow-sm border border-slate-200/40 transition-all hover:shadow-md h-24">
+                <img 
+                  src="/lovable-uploads/fe277b04-5c32-4263-865c-1f0111aa42d0.png" 
+                  alt="Zymetria" 
+                  className="max-h-full max-w-full object-contain opacity-90"
                 />
               </div>
             </div>

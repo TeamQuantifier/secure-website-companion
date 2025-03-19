@@ -3,7 +3,7 @@ import { useState, useRef, useEffect } from 'react';
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
-import { Check, ChevronDown, Mail, Phone } from 'lucide-react';
+import { Check, ChevronDown, Mail, Phone, MapPin } from 'lucide-react';
 import {
   Form,
   FormControl,
@@ -261,8 +261,8 @@ export const ContactForm = () => {
                   </div>
                   <div>
                     <h4 className="font-medium text-slate-800 mb-1">Email Us</h4>
-                    <a href="mailto:info@quantifier.ai" className="text-quantifier-purple hover:underline">
-                      info@quantifier.ai
+                    <a href="mailto:contact@quantifier.ai" className="text-quantifier-purple hover:underline">
+                      contact@quantifier.ai
                     </a>
                     <p className="text-sm text-slate-500 mt-1">
                       For general inquiries and information
@@ -276,11 +276,24 @@ export const ContactForm = () => {
                   </div>
                   <div>
                     <h4 className="font-medium text-slate-800 mb-1">Call Us</h4>
-                    <a href="tel:+15551234567" className="text-quantifier-purple hover:underline">
-                      +1 (555) 123-4567
+                    <a href="tel:+14157998206" className="text-quantifier-purple hover:underline">
+                      415-799-8206
                     </a>
                     <p className="text-sm text-slate-500 mt-1">
-                      Monday - Friday, 9am - 5pm EST
+                      Monday - Friday, 9am - 5pm PST
+                    </p>
+                  </div>
+                </div>
+                
+                <div className="flex items-start">
+                  <div className="bg-quantifier-purple/10 rounded-lg p-3 mr-4">
+                    <MapPin className="h-6 w-6 text-quantifier-purple" />
+                  </div>
+                  <div>
+                    <h4 className="font-medium text-slate-800 mb-1">Visit Us</h4>
+                    <p className="text-slate-700">
+                      447 Sutter St Ste 405 PMB 137<br />
+                      San Francisco, CA 94108
                     </p>
                   </div>
                 </div>
